@@ -1,0 +1,39 @@
+.cr {
+	font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'Rajdhani'
+
+}
+#crblack {
+	color: rgb(0, 0, 0);
+}
+#crred {
+    color: rgb(255, 0, 0);
+}
+#mainTitle {
+    color: rgb(0, 125, 0);
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Montserrat';
+}
+#menu ul {
+	margin: 20;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+#menu ul li {
+	display: inline;
+	white-space: normal;
+}
+#menu ul li a {
+	text-decoration: none;
+	padding: .8em 4em;
+
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 140, 200);
+	border-radius: 3px 3px 3px 3px;
+}
