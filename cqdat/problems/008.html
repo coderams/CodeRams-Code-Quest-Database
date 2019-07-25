@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 008: Apollo 13</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 8</em></p>      <p id="ptext">       <br>
+       "Houston, we’ve had a problem…"<br>
+       <br>
+       Those are words that nobody at NASA Mission Control ever wants to hear, but they were famously said on April 13th, 1970, during the Apollo 13 Mission.  Just moments before, an electrical fault had caused the explosion of one of the oxygen tanks on the spacecraft carrying three astronauts to the Moon.  The loss of oxygen was causing the Command Module to rapidly lose power.  The only hope for survival for the three astronauts was to climb into the undamaged but much smaller Lunar Module and use it as a lifeboat to return to Earth.<br>
+       <br>
+       Unfortunately, the Apollo 13 crew wasn’t headed towards Earth; they’d already changed course to head towards the Moon.  To make matters worse, the debris from the explosion had rendered their normal navigation systems useless.  The Apollo crew had to work quickly with mission control to not only determine where they were in space, but get back onto a course towards Earth, and arrive before they ran out of food, water, air, or simply froze to death.  Even the slightest error could have sent them hurtling off into space, never to be seen again.  Within a few hours, however, they were able to develop new calculations that saw the crew of Apollo 13 safely land in the Pacific Ocean a few days later. <br>
+       <br>
+       One of the calculations the crew had to make was intended to determine the gimbal angles between the Command and Lunar Modules.  While we don’t know the exact equations they used, we can simplify the problem somewhat since there aren’t any lives on the line this time.  If we assume that the Lunar Module and the Command Module are docked head-to-head, their gimbals should be positioned exactly opposite one another – offset by exactly 180° in all directions.<br>
+       <br>
+       For this problem, you will need to calculate the position of the Lunar Module’s gimbals on the x, y, and z axes given the position of the Command Module’s gimbals and using the assumption described above.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob08.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	Three decimal numbers on one line, separated by spaces, representing the Command Module’s gimbal angles on the x, y, and z axes (respectively).  These values will be between 0.0 and 359.99, inclusive.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       2<br>
+       356.69 163.42 346.67<br>
+       302.26 345.92 011.79<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       For each test case, you should subtract 180° from each angle to provide the Lunar Module’s gimbal position.  Your program should output the following:<br>
+       <br>
+       •	Three decimal numbers on one line, separated by spaces, representing the Lunar Module’s gimbal angles on the x, y, and z axes (respectively).  These values should be between 000.00 and 359.99, inclusive; negative angles should be converted to the equivalent positive angle.  Leading and trailing zeroes should be included.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       176.69 343.42 166.67<br>
+       122.26 165.92 191.79<br>
+     </p>
+    </body>
+</html>

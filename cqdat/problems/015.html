@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 015: Piecewise Encrypter</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 15</em></p>      <p id="ptext">       <br>
+       In math, a piecewise function is defined by multiple sub-functions, with each sub function applying to different input values.  Your task today is to create a piecewise encrypter!<br>
+       <br>
+       You were asked to create a program to encrypt a piece of text.  You will be given a set of alphabetic letters to encode.  Each alphabetic letter will be encoded by first being translated into a number as follows:<br>
+       <br>
+       A=1, B=2, C=3, . . . , X=24, Y=25, Z=26<br>
+       <br>
+       Once each letter has been converted into a number, it must be modified according to the rules in the table below. <br>
+       <br>
+       If the letter falls <br>
+       within this range:<br>
+       Use this encoding rule:<br>
+       A – E<br>
+       Add 6 to its numerical value.<br>
+       F – J<br>
+       Square its numerical value.<br>
+       K – O<br>
+       Divide its numerical value by 3.  Multiply the integer remainder by 5 and add 1.<br>
+       P – T<br>
+       Multiply the sum of the digits of its numerical value by 8.<br>
+       U- Z<br>
+       Find the largest integer factor of its numerical value less than the value itself.  Multiply it by 2.<br>
+       <br>
+       Once you get the result of applying the numeric encoding rule, convert the numerical value back to an alphabetic letter to use in your output.  For example, 7 would be converted into G.  If the result of the rule is greater than 26, divide the number by 26 and use the remainder to determine which letter it corresponds to.  For example, 27 will be encoded as A and 28 will be encoded as B.  If the result of encoding calculation is 0, the original character will be used.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob15.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single line of text to encode.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       2<br>
+       HELLO<br>
+       WORLD<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       For each test case, your program should output one line containing the encrypted text.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       LKAAA<br>
+       <br>
+     </p>
+    </body>
+</html>

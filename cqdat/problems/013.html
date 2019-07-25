@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 013: Peoplebook</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 13</em></p>      <p id="ptext">       <br>
+       In a world where technology connects people in ways that never existed before, it can be hard to keep track of everyone!  Since most of your friends now have various social media accounts such as Instagram and Twitter, as well as a mobile number and email address, sometimes it’s hard to remember them all.<br>
+       <br>
+       To solve this problem, write a program that acts as a dictionary for people!<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob13.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A line containing a number (between 2 and 20) representing the number of people for which data will be provided<br>
+       •	A line containing data to be stored in the dictionary.  The data will be provided as an array of arrays; each array contains a different type of data and will be the same length.  Each index corresponds to the same person (in other words, the first entry of each array represents the information for the first person, the second entry contains the second person’s data, and so forth.).  Each array, including the outer array, will be wrapped with square brackets [ ], and each entry will be separated by commas.  The data contained in each array is:<br>
+       o	First array: Name (Text which may contain upper- and lower-case letters and spaces)<br>
+       o	Second array: Age (A number between 10 and 90)<br>
+       o	Third array: Instagram username (Text which may contain upper- and lower-case letters and numbers)<br>
+       o	Fourth array: Twitter handle (Text which starts with an @ symbol, then is followed by upper- and lower-case letters and numbers)<br>
+       o	Fifth array: Mobile number (A ten-digit number)<br>
+       o	Sixth array: Email address (Text which contains upper- and lower-case letters and numbers, followed by exactly one @ symbol, followed by lowercase letters and periods (.))<br>
+       •	A number of lines equal to the number of people, with each line containing the name of one person<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       2<br>
+       2<br>
+       [[Alice,Bob],[15,16],[aliceInsta,BobIsCool1],[@wonderland,@bobbyBoy],[1234567890,4078675309],[alice123@gmail.com,bobsEmail@yahoo.com]]<br>
+       Alice<br>
+       Bob<br>
+       2<br>
+       [[Joe,Eve],[32,45],[AverageJoe,DropperOfEves],[@shoeless,@eve123],[8374629401,3849502837],[joeabc123@orange.co.uk,eve@army.us.mil]]<br>
+       Eve<br>
+       Joe<br>
+
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       For each test case, you must print each person’s profile in the order they are named after the data array.  Profiles should be printed across multiple lines in the format shown below.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       Name: Alice<br>
+       Age: 15<br>
+       Instagram: aliceInsta<br>
+       Twitter: @wonderland<br>
+       Phone: 1234567890<br>
+       Email: alice123@gmail.com<br>
+       Name: Bob<br>
+       Age: 16<br>
+       Instagram: BobIsCool1<br>
+       Twitter: @bobbyBoy<br>
+       Phone: 4078675309<br>
+       Email: bobsEmail@yahoo.com<br>
+       Name: Eve<br>
+       Age: 45<br>
+       Instagram: DropperOfEves<br>
+       Twitter: @eve123<br>
+       Phone: 3849502837<br>
+       Email: eve@army.us.mil<br>
+       Name: Joe<br>
+       Age: 32<br>
+       Instagram: AverageJoe<br>
+       Twitter: @shoeless<br>
+       Phone: 8374629401<br>
+       Email: joeabc123@orange.co.uk<br>
+       <br>
+     </p>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 010: Bishop’s Move</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 10</em></p>      <p id="ptext">       <br>
+       Chess is a well-known and well-studied game.  Thousands of computer programs have been written about chess.  Some play the game interactively, while others analyze and predict strategies.  One thing is certain: if you don’t know how the chess pieces move, your program will not be any good.<br>
+       <br>
+       For this problem, we are going to take a look at a chess piece called the bishop.  The bishop can move any number of squares, but it has to move diagonally in a straight line.  Also, what fun is a standard chess board?  We are going to be using boards of random size.  One good thing though: your bishop will be the only piece on the board.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob10.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain two numbers, R and C, separated by a single comma that tell us how many rows and columns our chess board has.  The top left square will be space (1,1), and the bottom right will be (R, C).  Both R and C will be greater than or equal to 2, and less than or equal to 1,000.<br>
+       •	The second line of each test case will contain two numbers, r1 and c1, separated by a single comma denoting the starting row and column for our bishop.<br>
+       •	The last line of each test case will contain two numbers, r2 and c2, separated by a single comma denoting the ending row and column for our bishop.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       3<br>
+       8,8<br>
+       1,1<br>
+       8,8<br>
+       10,20<br>
+       5,6<br>
+       7,8<br>
+       100,100<br>
+       50,50<br>
+       20,21<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       Since we are just interested in you being able to make your bishop move, your program should simply output "Yes" if the bishop can move from the starting space to the ending space in any number of moves, and "No" if it can’t.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       Yes<br>
+       <br>
+     </p>
+    </body>
+</html>

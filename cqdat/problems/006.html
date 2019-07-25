@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 006: Space Station Repair Lights</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 6</em></p>      <p id="ptext">       <br>
+       You’ve been hired to work on a systems diagnostic unit for the International Space Station.  This unit will monitor four critical systems – a Battery, a Heat Exchanger, a Water Pump, and a Temperature Sensor – to determine if they are working or not.  However, space is at a premium on the ISS, and so you will only have room for two LED lights for the astronauts to see!<br>
+       <br>
+       Your team has come up with a design that will allow the astronauts to determine which systems, if any, are broken based on the colors of the two LED lights.  Each system you’re monitoring is given a numerical value based on how critical it is to the operation and safety of the station:<br>
+       <br>
+       •	Battery: 8<br>
+       •	Heat Exchanger: 4<br>
+       •	Water Pump: 2<br>
+       •	Temperature Sensor: 1<br>
+       <br>
+       Whenever the unit runs, it will add the values of any broken systems together and light up the LEDs to indicate the resulting number.  Each LED has four states, each representing a number – off (0), red (1), green (2), and blue (3).  The astronauts will multiply the left LED’s value by four, then add it to the right LED’s value, in order to determine the correct error code.  For example, if the left LED is red and the right LED is green, the astronauts would calculate the error code as (1 * 4) + 2 = 6.<br>
+       <br>
+       Your task is to write the logic that controls the LEDs.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob06.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single line with four words separated by spaces, each either WORKING or BROKEN. These represent the statuses of the Battery, Heat Exchanger, Water Pump, and Temperature Sensor, respectively.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       3<br>
+       WORKING WORKING WORKING WORKING<br>
+       WORKING BROKEN BROKEN WORKING<br>
+       BROKEN BROKEN BROKEN BROKEN<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should print out the correct color (in lowercase) of the two LED lights; first the left LED’s color, then a space, then the right LED’s color.  If an LED is off, print "off."<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       off off<br>
+       red green<br>
+       blue blue<br>
+       <br>
+     </p>
+    </body>
+</html>

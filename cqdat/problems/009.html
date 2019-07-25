@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 009: Are Eucliding Me?</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 9</em></p>      <p id="ptext">       <br>
+       Coprime integers are used as values in some cryptographic algorithms such as RSA.  Two integers are coprime if their greatest common divisor (GCD) is 1.  There are many ways to calculate the GCD of two numbers.  The Greek mathematician Euclid developed an algorithm, known today as the Euclidean algorithm or Euclid’s algorithm, to calculate the GCD of two integers.  There are many ways to implement this algorithm, and one way is using successive subtraction like this:<br>
+       <br>
+       When you have a subtraction problem in the form A – B = C, the letter A is called the minuend, the letter B is called the subtrahend, and the letter C is called the difference.  The following is a summary of each iteration of the algorithm:<br>
+       <br>
+       1.	Always put the bigger number as the minuend and the smaller number as the subtrahend.  If they are equal, then their value is the GCD.  If they are both 1, the numbers are coprime.<br>
+       2.	Subtract to obtain the difference between the two.<br>
+       3.	Use the subtrahend and the difference as the two numbers in the next iteration.<br>
+       <br>
+       The following example shows how to get the GCD of 10 and 17:<br>
+       <br>
+       17 – 10 = 7<br>
+       10 – 7 = 3<br>
+       7 – 3 = 4<br>
+       4 – 3 = 1<br>
+       3 – 1 = 2<br>
+       2 – 1 = 1<br>
+       1 – 1 = 0<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob09.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	Two integers separated by a single comma.  Both numbers will be greater than or equal to 2, and less than or equal to 1,000,000.<br>
+       <br>
+     </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       10,17<br>
+       56,26<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       Your program should output the following:<br>
+       <br>
+       •	For each iteration of Euclid’s algorithm, print out the subtraction equation that results.  Your last equation should have a difference of 0.<br>
+       •	At the end of each test case, indicate if the numbers are coprime or not by printing either COPRIME or NOT COPRIME.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       17-10=7<br>
+       10-7=3<br>
+       7-3=4<br>
+       4-3=1<br>
+       3-1=2<br>
+       2-1=1<br>
+       1-1=0<br>
+       COPRIME<br>
+       56-26=30<br>
+       30-26=4<br>
+       26-4=22<br>
+       22-4=18<br>
+       18-4=14<br>
+       14-4=10<br>
+       10-4=6<br>
+       6-4=2<br>
+       4-2=2<br>
+       2-2=0<br>
+       NOT COPRIME<br>
+       <br>
+       <br>
+     </p>
+    </body>
+</html>

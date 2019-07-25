@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 017: Tic Tac Toe Checker</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 17</em></p>      <p id="ptext">       <br>
+       Tic-tac-toe is a game for two players, X and O, who take turns marking the spaces in a 3 x 3 grid.  The player who succeeds in placing three of their marks in a horizontal, vertical or diagonal row wins the game.<br>
+       <br>
+       The following example game is won by the first player, X:<br>
+       <br>
+       <br>
+       <br>
+       You have been hired by CoolGames, Inc. to create a tic-tac-toe checker program that they can use to determine whether X wins, O wins, or if a tie has resulted.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob17.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single line of characters denoting the current state of a Tic-Tac-Toe game<br>
+       <br>
+       The game state will represented as follows:<br>
+       <1 VALUE><2 VALUE><3 VALUE><4 VALUE><5 VALUE><6 VALUE><7 VALUE><8 VALUE><9 VALUE><br>
+        <br>
+       <br>
+       <img src="../pics/017_A.png">
+       <br>
+       <br>
+       <br>
+       <br>
+       In Figure 1, it shows how the values in the tic-tac-toe board are mapped.  In Figure 2, it shows an example tic-tac-toe game being played where "-" means no one has played in the area.  In Figure 3, it shows how the tic-tac-toe game is encoded into a string of values based on the board mapping.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       8<br>
+       O-X-OOXXX<br>
+       XOX-OXO-X<br>
+       X-O-XO--O<br>
+       OXOXXOXOX<br>
+       --X-X-XOO<br>
+       XXOXO-O--<br>
+       XOXXOOOXX<br>
+       ---------<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       For each test case, your program should output one line in the following format:<br>
+       <br>
+       •	The original input line followed by a single space, an equal sign, and another single space<br>
+       •	One of the following three phrases depending on the outcome of the game:<br>
+       o	X WINS<br>
+       o	O WINS<br>
+       o	TIE<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       O-X-OOXXX = X WINS<br>
+       XOX-OXO-X = X WINS<br>
+       X-O-XO--O = O WINS<br>
+       OXOXXOXOX = TIE<br>
+       --X-X-XOO = X WINS<br>
+       XXOXO-O-- = O WINS<br>
+       XOXXOOOXX = TIE<br>
+       <br>
+     </p>
+    </body>
+</html>

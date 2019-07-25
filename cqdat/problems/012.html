@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 012: Sieve of Eratosthenes</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 12</em></p>      <p id="ptext">       <br>
+       A prime number is an integer whose only factors are one and itself.  There are two generally primitive methods to determine if a number is prime.  You can select an arbitrary number and test through factorization, or you can find a prime number through a number field sieve. <br>
+       <br>
+       A Greek mathematician by the name of Eratosthenes developed an algorithm that will find all prime numbers up to a specified limit.  This algorithm is known as the Sieve of Eratosthenes.<br>
+       <br>
+       The algorithm works by starting with the first prime number, 2, and then iteratively generating composite numbers from the prime number.  A composite number is a number that can be written as a product of two other numbers, neither of which is itself.  These composite numbers are then "sieved out" so they no longer need to be processed, because we already know they aren’t prime.<br>
+       <br>
+       For example, let’s say that we were working with the numbers up to and including 10.  Our original prime candidate set would be {2, 3, 4, 5, 6, 7, 8, 9, 10}.  Since 2 is first in the list, it must be prime.  We can now eliminate every multiple of 2 from our prime candidates, leaving us with {3, 5, 7, 9}.  Now 3 is first in the list, so 3 is a prime number.  We now eliminate multiples of 3, leaving us with {5, 7}.  Continuing on, we find that 5 and 7 are both primes.  The final set of primes between 1 and 10 is {2, 3, 5, 7}.<br>
+       <br>
+       Your task is to implement the Sieve of Eratosthenes, even if you can’t say it!<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob12.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A positive integer N denoting the limit for the sieve (inclusive).  N will be greater than or equal to 2, and will be less than or equal to 45,000.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       4<br>
+       2<br>
+       10<br>
+       50<br>
+       90<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should output the following:<br>
+       <br>
+       •	For each prime number you find that eliminated other numbers from the list, print the size of the eliminated set in the following format:<br>
+       <br>
+       Prime [P] Composite Set Size: <Size><br>
+       <br>
+       •	At the end of each test case, print the set of primes separated by commas and contained in curly braces.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       {2}<br>
+       Prime 2 Composite Set Size: 4<br>
+       Prime 3 Composite Set Size: 1<br>
+       {2,3,5,7}<br>
+       Prime 2 Composite Set Size: 24<br>
+       Prime 3 Composite Set Size: 7<br>
+       Prime 5 Composite Set Size: 2<br>
+       Prime 7 Composite Set Size: 1<br>
+       {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47}<br>
+       Prime 2 Composite Set Size: 44<br>
+       Prime 3 Composite Set Size: 14<br>
+       Prime 5 Composite Set Size: 5<br>
+       Prime 7 Composite Set Size: 2<br>
+       {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89}<br>
+      <br>
+    </p>
+    </body>
+</html>

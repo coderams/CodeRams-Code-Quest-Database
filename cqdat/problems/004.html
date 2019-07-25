@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 004: Rock, Paper, Scissors</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2018 Problem 4</em></p>      <p id="ptext">       <br>
+       Rock, Paper, Scissors is a simple game typically played head to head by two players.  The players in unison say "rock, paper, scissors" and simultaneously form one of those three shapes with their hand.  The winner is determined by comparing hands where ROCK beats SCISSORS, SCISSORS beats PAPER, and PAPER beats ROCK.<br>
+       <br>
+       For this problem, you are going to be determining the winner of a series of ROCK/PAPER/SCISSORS showdowns.  Simple, right?  However, to make this more interesting, we are going to allow for a random number of players in each round (2 or more).  <br>
+       <br>
+       Pay close attention to the following rules when determining the winner of each round:<br>
+       •	ROCK beats SCISSORS<br>
+       •	SCISSORS beats PAPER<br>
+       •	PAPER beats ROCK<br>
+       •	If there is not a single winner, the result is "NO WINNER"<br>
+       <br>
+       Consider these examples:<br>
+       •	In a 4 player game with hands of ROCK, SCISSORS, ROCK, ROCK the result is "NO WINNER" because the 3 people with ROCK each beat SCISSORS, but tie with each other.<br>
+       •	In a 4 player game with hands of ROCK, PAPER, ROCK, ROCK the winner is "PAPER" because the single player with PAPER beats all other players with ROCK.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob04.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	2 or more letters from the set of R, P, or S (representing ROCK, PAPER or SCISSORS) in any sequence separated by single spaces.<br>
+       <br>
+       Note: The letters (R, P and S) will always be upper case and can occur more than once in a round.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       10<br>
+       R S<br>
+       R P R R<br>
+       R P S<br>
+       P S P S P R P S S R<br>
+       P P P<br>
+       S R S S S S S S S S S S S S S S S S<br>
+       P R<br>
+       R S R<br>
+       S P P<br>
+       S S<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should output the single winner in the form "ROCK", "PAPER" or "SCISSORS" (upper case), or "NO WINNER" if no single winner prevails.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       ROCK<br>
+       PAPER<br>
+       NO WINNER<br>
+       NO WINNER<br>
+       NO WINNER<br>
+       ROCK<br>
+       PAPER<br>
+       NO WINNER<br>
+       SCISSORS<br>
+       NO WINNER<br>
+       <br>
+     </p>
+    </body>
+</html>
