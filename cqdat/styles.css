@@ -31,6 +31,7 @@ body {
 	margin-left: 60px;
 	margin-right: 100px;
 	padding-left: 50px;
+	font-family: monospace;
 }
 #sub {
 	font-size: 20px;
@@ -47,6 +48,117 @@ body {
 }
 #crblack {
 	color: rgb(0, 0, 0);
+}
+#p1 {
+    background-color: rgb(10, 190, 0)
+}
+#p2 {
+    background-color: rgb(10, 190, 0)
+}
+#p3 {
+    background-color: rgb(20, 180, 0)
+}
+#p4 {
+    background-color: rgb(30, 170, 0)
+}
+#p5 {
+    background-color: rgb(40, 160, 0)
+}
+#p6 {
+    background-color: rgb(50, 150, 0)
+}
+#p7 {
+    background-color: rgb(70, 130, 0)
+}
+#p8 {
+    background-color: rgb(70, 130, 0)
+}
+#p9 {
+    background-color: rgb(80, 120, 0)
+}
+#p10 {
+    background-color: rgb(90, 110, 0)
+}
+#p11 {
+    background-color: rgb(100, 100, 0)
+}
+#p12 {
+    background-color: rgb(100, 100, 0)
+}
+#p13 {
+    background-color: rgb(110, 90, 0)
+}
+#p14 {
+    background-color: rgb(120, 80, 0)
+}
+#p15 {
+    background-color: rgb(110, 90, 0)
+}
+#p16 {
+    background-color: rgb(130, 70, 0)
+}
+#p17 {
+    background-color: rgb(80, 120, 0)
+}
+#p18 {
+    background-color: rgb(180, 20, 0)
+}
+#p19 {
+    background-color: rgb(170, 30, 0)
+}
+#p20 {
+    background-color: rgb(10, 190, 0)
+}
+#p21 {
+    background-color: rgb(20, 180, 0)
+}
+#p22 {
+    background-color: rgb(10, 190, 0)
+}
+#p23 {
+    background-color: rgb(30, 170, 0)
+}
+#p24 {
+    background-color: rgb(50, 150, 0)
+}
+#p25 {
+    background-color: rgb(50, 150, 0)
+}
+#p26 {
+    background-color: rgb(50, 150, 0)
+}
+#p27 {
+    background-color: rgb(70, 130, 0)
+}
+#p28 {
+    background-color: rgb(80, 120, 0)
+}
+#p29 {
+    background-color: rgb(110, 90, 0)
+}
+#p30 {
+    background-color: rgb(90, 110, 0)
+}
+#p31 {
+    background-color: rgb(140, 60, 0)
+}
+#p32 {
+    background-color: rgb(130, 70, 0)
+}
+#p33 {
+    background-color: rgb(160, 40, 0)
+}
+#p34 {
+    background-color: rgb(150, 50, 0)
+}
+#p35 {
+    background-color: rgb(160, 40, 0)
+}
+#p36 {
+    background-color: rgb(190, 10, 0)
+}
+#p37 {
+    background-color: rgb(200, 0, 0)
 }
 #crred {
     color: rgb(255, 0, 0);
@@ -90,8 +202,12 @@ body {
 }
 #probs ul li a {
 	text-decoration: none;
-	padding: 1em 20em;
+	padding: 1em 10em;
 	color: rgb(255, 255, 255);
-	background-color: rgb(0, 140, 200);
+
 	border-radius: 3px 3px 3px 3px;
+}
+#htext {
+	font-size: 20px;
+	text-align: center;
 }

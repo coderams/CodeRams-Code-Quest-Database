@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 026: Batter Up!</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 7<br>This problem has a difficulty of 25</em></p>      <p id="ptext">       <br>
+       In baseball statistics, the slugging percentage (SLG) is a popular measure of the power of a hitter.  You will be given a list of players and their at-bats for a single game.  You will need to compute each player’s slugging percentage.  For this exercise, no player will be hit by a pitch.<br>
+       <br>
+       The slugging percentage is found by counting all the singles, doubles, triples, and home runs in a given game and applying a set weight to each achievement (home runs are worth more than singles), then dividing that number by the total number of at-bats in that game as shown here:<br>
+       <br>
+       <img src="../pics/026_A.png">
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob07.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single line of input per player consisting of the batter’s name, a colon, and some number of at-bats separated by commas.<br>
+       <br>
+       A player’s at bats can be any of the following:<br>
+       <br>
+       •	BB means the player was walked by the pitcher and does NOT count as an at-bat.<br>
+       •	K is an at-bat where the player struck out and did not reach a base.<br>
+       •	1B is an at-bat where the player hit a single.<br>
+       •	2B is an at-bat where the player hit a double.<br>
+       •	3B is an at-bat where the player hit a triple.<br>
+       •	HR is an at-bat where the player hit a home run.<br>
+       <br>
+       Please note that not every player in the game has the same number of at bats.  If a player has no at-bats, then their slugging percentage should be 0.<br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       4<br>
+       Moreland:K,2B,1B,HR<br>
+       Andrus:BB,BB,2B,K<br>
+       Chirinos:1B,1B,3B<br>
+       Odor:1B,K,3B<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should output the player’s name, as it appeared in the input, an equal sign and then their slugging percentage rounded to 3 decimal places, no spaces.  Use the standard Code Quest rounding rules found in Appendix A.<br>
+      <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       Moreland=1.750<br>
+       Andrus=1.000<br>
+       Chirinos=1.667<br>
+       Odor=1.333<br>
+       <br>
+     </p>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 033: Catalog It!</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 14<br>This problem has a difficulty of 80</em></p>      <p id="ptext">       <br>
+       You have been tasked with creating a catalog of Lockheed Martin’s products.  The products are organized in a hierarchy with several categories and subcategories of products.  You load this data from a database, but unfortunately the only information you have access to is a listing of each product or category and its immediate parent.  Your task is to convert this flat listing into a nested view that better shows the hierarchy of the products.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob14.in.txt will contain a positive integer T denoting the number of products/categories in the input file.  One line will follow for each product/category.<br>
+       <br>
+       The line will consist of the product/category’s name followed by a comma and the name of the product/category’s parent.  If the parent is “None”, that indicates that the product/category is at the top of the hierarchy and has no parent.  You need to be able to handle a hierarchy any number of levels deep.  Names are guaranteed to be unique, and parents will appear in the input file before any of their children.  There could also be more than one top level item.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       11<br>
+       All Products,None<br>
+       Space Products,All Products<br>
+       Aeronautic Products,All Products<br>
+       Satellites,Space Products<br>
+       GPS,Satellites<br>
+       A2100,Satellites<br>
+       Manned Spacecraft,Space Products<br>
+       Orion,Manned Spacecraft<br>
+       Fighter Planes,Aeronautic Products<br>
+       F-35 Lightning 2,Fighter Planes<br>
+       F-22 Raptor,Fighter Planes<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Output a hierarchical listing of all of the products/categories in the input where each item is nested underneath its parent.  Each item should be preceded by dashes to show its depth in the hierarchy and should have one more dash than its parent has.  All products that share a parent should be listed in alphabetical order.  This applies to top level categories as well.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       All Products<br>
+       -Aeronautic Products<br>
+       --Fighter Planes<br>
+       ---F-22 Raptor<br>
+       ---F-35 Lightning 2<br>
+       -Space Products<br>
+       --Manned Spacecraft<br>
+       ---Orion<br>
+       --Satellites<br>
+       ---A2100<br>
+       ---GPS<br>
+       <br>
+     </p>
+    </body>
+</html>

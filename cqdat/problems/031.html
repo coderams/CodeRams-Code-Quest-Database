@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 031: Compounding the Problem</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 12<br>This problem has a difficulty of 70</em></p>      <p id="ptext">       <br>
+       Personal debt is a huge political issue that affects many people, partly because they don’t understand how credit cards work.  Fortunately for you, a large credit card company has hired your team to develop an algorithm to compute the monthly interest charged to their customers for balances owed on their credit cards.  The credit card company computes the interest owed by its customers using the following formula:<br>
+       <br>
+       <img src="../pics/031_A.png">
+       <br>
+       Where:<br>
+       A = the sum of the daily balances in the billing period<br>
+       D = number of days in the billing period<br>
+       I = annual interest rate<br>
+       P = number of billing periods per year<br>
+       <br>
+       Below is an example credit card statement for a card that charges an 18% annual rate of interest:<br>
+       <br>
+       <img src="../pics/031_B.png">
+       <br>
+       The monthly interest charges for the period are: <br>
+       <br>
+       ($25,100 / 30) x (0.18 / 12) = $12.55<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob12.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line will contain a single integer N denoting the number of days in the billing cycle<br>
+       •	The next N lines will contain a comma delimited list of information about each day in the billing cycle in the following format: <Day Number>,<Purchases>,<Payments><br>
+       <br>
+       Note that purchases increase the daily balance, and payments decrease it.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       2<br>
+       30<br>
+       1,200.00,<br>
+       2,,<br>
+       3,,<br>
+       4,350.00,<br>
+       5,,<br>
+       6,,<br>
+       7,,<br>
+       8,100.00,<br>
+       9,,50.00<br>
+       10,,<br>
+       11,,<br>
+       12,400.00,<br>
+       13,,<br>
+       14,,<br>
+       15,,<br>
+       16,,<br>
+       17,,<br>
+       18,,<br>
+       19,,<br>
+       20,,<br>
+       21,75.00,<br>
+       22,,<br>
+       23,,<br>
+       24,,100.00<br>
+       25,,<br>
+       26,,<br>
+       27,200.00,<br>
+       28,,<br>
+       29,,<br>
+       30,,<br>
+       31<br>
+       1,300.00,<br>
+       2,,<br>
+       3,,<br>
+       4,450.00,<br>
+       5,,<br>
+       6,,<br>
+       7,,<br>
+       8,100.00,<br>
+       9,,50.00<br>
+       10,,<br>
+       11,,<br>
+       12,800.00,<br>
+       13,,<br>
+       14,,<br>
+       15,,<br>
+       16,,<br>
+       17,,<br>
+       18,,<br>
+       19,,<br>
+       20,,<br>
+       21,75.00,<br>
+       22,,<br>
+       23,,<br>
+       24,,100.00<br>
+       25,,<br>
+       26,,<br>
+       27,200.00,<br>
+       28,,<br>
+       29,,<br>
+       30,,<br>
+       31,,<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case provided in the program input, your program should print the amount of monthly interest that will be charged to the customer using an 18% annual rate of interest.  The beginning balance at the start of each month is always 0.  Use the rounding rules found in Appendix A if you need to round your answers.  Make sure you print two digits for your cents.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       $12.55
+       <br>
+       $19.44
+       <br>
+       <br>
+     </p>
+</html>

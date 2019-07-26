@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 027: Mission to Mars</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 8<br>This problem has a difficulty of 35</em></p>      <p id="ptext">       <br>
+       How long does it take to get from Earth to Mars?  The answer is “it depends”.  On what, you ask?  Well, to keep things simple, we’ll consider the simplest distance formula:<br>
+       <br>
+       <img src="../pics/027_A.png">
+       <br>
+       <br>
+       Which can be re-written as:<br>
+       <br>
+       <img src="../pics/027_B.png">
+       <br>
+       <br>
+       In other words, the time it takes to get somewhere depends on how far we need to go and how fast we travel getting there.  So how far away is Mars anyway?  And how fast can we travel?<br>
+       <br>
+       Mars is the fourth planet from the sun, and the second closest to Earth (Venus is the closest).  But the distance between the two planets is constantly changing as they travel around the sun.  In theory, the closest that Earth and Mars would approach each other would be when Mars is at its closest point to the sun (perihelion) and Earth is at its farthest (aphelion).  This would put the planets only 33.9 million miles apart.  However, this has never happened in recorded history.  The closest approach of the two planets occurred in 2003, when they were only 34.8 million miles apart.  The two planets are farthest apart when they are both at their farthest from the sun, on opposite sides of the star.  At this point, they can be 250 million miles apart.<br>
+       <br>
+       The fastest spacecraft launched from Earth was NASA's New Horizons mission, which is en route to Pluto.   In January 2006, the probe left Earth at 36,000 miles per hour.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob08.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single line containing two numbers separated by a space.  The numbers will be as follows:<br>
+        	The first number will be the distance between Mars and Earth, measured in millions of miles.  The number could be an integer or a decimal.<br>
+          The second number will be the speed of the ship, measured in miles per hour.  The number could be an integer or a decimal.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>3<br>
+       34.8 36000<br>
+       250 36000.1<br>
+       150 23500<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       Your program should print out how long it will take the ship to reach Mars in the following format:<br>
+       <br>
+       Time to Mars: <DAYS> days, <HOURS> hours, <MINUTES> minutes, <SECONDS> seconds<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       Time to Mars: 40 days, 6 hours, 40 minutes, 0 seconds<br>
+       Time to Mars: 289 days, 8 hours, 25 minutes, 31 seconds<br>
+       Time to Mars: 265 days, 22 hours, 58 minutes, 43 seconds<br>
+       <br>
+     </p>
+    </body>
+</html>

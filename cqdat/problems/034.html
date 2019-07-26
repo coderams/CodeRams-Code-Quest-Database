@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 034: Dollar Bill Poker</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 15<br>This problem has a difficulty of 75</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       How about a friendly game of poker?  Don’t worry – no poker experience is required.  For our game we aren’t playing the traditional way with a deck of cards.  Rather, you will be reading serial numbers from dollar bills from our cyber bank and determining the best possible poker hand based on the digits of that serial number.<br>
+       <br>
+       Pay close attention to the following rules as they vary slightly from actual poker.<br>
+       •	Zeroes in the serial number are to be ignored and cannot be used in making your hand<br>
+       •	You may use a maximum of 5 digits from the 8 digit serial number<br>
+       •	You may reorder the digits (e.g. in order to form a “straight”)<br>
+       •	Each set of serial numbers may produce multiple possible poker hands, but you are to identify only the best hand based on the hand ranks below<br>
+       <br>
+       <img src="../pics/034_A.png" width=830 height=300><br>
+
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob15.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single line containing an 8 digit serial number.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       11<br>
+       14912276<br>
+       99027737<br>
+       39217860<br>
+       59977643<br>
+       58276501<br>
+       77437751<br>
+       03999299<br>
+       12145671<br>
+       12340076 <br>
+       98764115<br>
+       11223344<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       For each test case, your program should output one line containing the serial number and the best hand achieved in the following format.  The best hand should be displayed in all caps.  In the event that the best hand is a high digit, print the digit.<br>
+       <br>
+       •	<SERIAL NUMBER> = <BEST HAND><br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       14912276 = TWO PAIR<br>
+       99027737 = FULL HOUSE<br>
+       39217860 = 9<br>
+       59977643 = STRAIGHT<br>
+       58276501 = PAIR<br>
+       77437751 = FOUR OF A KIND<br>
+       03999299 = FIVE OF A KIND<br>
+       12145671 = THREE OF A KIND<br>
+       12340076 = 7<br>
+       98764115 = STRAIGHT<br>
+       <br>
+     </p>
+    </body>
+</html>

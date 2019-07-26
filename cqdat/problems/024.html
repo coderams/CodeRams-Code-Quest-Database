@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 024: Donor Sort</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 5<br>This problem has a difficulty of 25</em></p>      <p id="ptext">       <br>
+       A local charity has hired you to help organize their lists of donors.  The organization has a list of people who donated to the organization last year, and another list of this year’s donors.  The group wants to send emails to three groups of people:<br>
+       <br>
+       •	People who donated last year but didn’t this year<br>
+       •	People who donated both years<br>
+       •	People who donated this year but didn’t last year<br>
+       <br>
+       Each group will receive a different email, so they need to know which donors belong to each group.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob05.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a comma separated list of the names of last year’s donors.<br>
+       •	The second line of each test case will contain a comma separated list of the names of this year’s donors.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code">
+       <br>
+       2<br>
+       Bob,Joe,Steve,Mary,Ann<br>
+       Bob,Steve,Ann,Paula,Chris<br>
+       Bill,Ted,Liz,Quinn<br>
+       Quinn,Liz,Ken,Bill<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Each of your test cases should output three lines:<br>
+       <br>
+       •	On the first line, output a comma separated list of donors who gave last year but not this year.<br>
+       •	On the second line, output a comma separated list of donors who gave both last year and this year.<br>
+       •	On the third line, output a comma separated list of donors who gave this year but not last year.<br>
+       <br>
+       Each list of names should be sorted alphabetically.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code">
+       <br>
+       Joe,Mary<br>
+       Ann,Bob,Steve<br>
+       Chris,Paula<br>
+       Ted<br>
+       Bill,Liz,Quinn<br>
+       Ken<br>
+       <br>
+     </p>
+    </body>
+</html>
