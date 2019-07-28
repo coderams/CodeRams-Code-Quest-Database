@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 048: Encryption</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 11<br>This problem has a difficulty of 50</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Security has become one of the most important topics in the computing industry.  There is no shortage of people trying to steal data or gain access to things they shouldn’t.  At the heart of protecting our systems is encryption.  Encryption is the process of encoding data into a form that only the people who are allowed to view the data are able to decode and read it.<br>
+       <br>
+       One method of encryption involves using a substitution cipher.  A substitution cipher is where each letter in a message is substituted for another letter.  For example, “hello” might be encrypted into “ifmmp” by substituting i=h, e=f, l=m, and o=p.<br>
+       <br>
+       You have been hired to encrypt and decrypt messages according to the cipher key (the mapping for the alphabet into the new encoding).  You must be able to both encrypt and decrypt messages, where encrypt means to map from the standard English alphabet to the cipher key and decrypt means to map from the cipher key to the standard English alphabet.  You must also be adaptable to being given a different cipher key each time. <br>
+       <br>
+       •	Spaces should not be encrypted or decrypted, merely transferred to the encrypted or decrypted message directly.<br>
+       •	The letters map to the cipher regardless of capitalization (i.e. ‘a’ and ‘A’ will both map to the same letter, but the capitalization will be different).  Capitalization should be preserved from input to output messages.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob11.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain either “ENCRYPT” or “DECRYPT”<br>
+       •	The second line of each test case will contain the cipher key which will be 26 characters which map in order to the standard English alphabet<br>
+       •	The third line of each test case will contain a positive integer N denoting the number of messages that follow.<br>
+       •	The next N lines will contain messages which need to either be encrypted or decrypted depending on the first line of the test case.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       ENCRYPT<br>
+       qwertyuiopasdfghjklzxcvbnm<br>
+       2<br>
+       Testing <br>
+       it works<br>
+       DECRYPT<br>
+       poiuytrewqlkjhgfdsamnbvcxz<br>
+       2<br>
+       Vykigjy<br>
+       xgn uwu wm<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each input message, there should be one output message that has been encrypted/decrypted.  There should be a blank line in between each test case.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+              
+       Ztlzofu <br>
+       oz vgkal<br>
+       Welcome<br>
+       you did it<br>
+       <br>
+    </p></body>
+</html>

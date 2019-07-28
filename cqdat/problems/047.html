@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 047: GCAS</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 10<br>This problem has a difficulty of 45</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Pilots have a lot to think about!  In order to make their job a bit easier, you have been tasked to develop a “Ground Collision Avoidance System” (GCAS) for the brand new F-X program.  This system is responsible for providing an audible warning to the pilot if they are in danger of colliding with the ground.  To do this, the GCAS maintains digital maps of terrain data and predicts the aircraft’s flight path.<br>
+       <br>
+       As soon as the aircraft takes off, the GCAS becomes active.  Your program will be responsible for reading sensor data containing the current altitude of the aircraft as well as the ground elevation along the aircraft’s current path.  You will use this data to decide how the GCAS will interact with the pilot.<br>
+       <br>
+       The GCAS is a predictive tool – meaning it can’t know what the pilot intends to do in the next time unit.  Therefore, its best guess is to calculate the change in altitude that the aircraft experienced in the current time unit and assume that the same change will happen in the next time unit.<br>
+       <br>
+       The GCAS should work like this:<br>
+       •	If the system thinks that the aircraft will crash in the next time unit, it should print “PULL UP!”<br>
+       •	If the system does not anticipate a crash but the aircraft is 500 ft. or less above the current ground elevation, it should print “Low Altitude!”<br>
+       •	If the system does not anticipate a crash and the aircraft has more than 500 ft. of altitude above the current ground elevation, it should print “ok”.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob10.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N telling you how long the flight is in time units.  Each subsequent line of data corresponds to one time unit.<br>
+       •	The next N lines of each test case will contain the current altitude of the plane as well as the next time unit’s ground elevation separated by a comma.<br>
+       •	The aircraft has 0 altitude at takeoff, and the ground elevation at takeoff and in the first time unit is 0.  You will need these values for your calculations in the first time unit.  Remember that your program will be reading current altitude but future ground elevation.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       1<br>
+       10<br>
+       500,300<br>
+       1000,500<br>
+       1250,750<br>
+       1500,1250<br>
+       1500,1750<br>
+       2000,1750<br>
+       2500,2000<br>
+       2250,2100<br>
+       2150,1800<br>
+       1900,1000<br>
+       <br>
+     </p>
+     <p id="ptext">
+       Graph of Example Data<br></p>
+       <img src="../pics/047_A.png" class="center">
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       For each of the N time units in the aircraft’s flight, the GCAS should print one of the following lines according to the rules given above:<br>
+       •	PULL UP!<br>
+       •	Low Altitude!<br>
+       •	ok<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Low Altitude!<br>
+       ok<br>
+       ok<br>
+       ok<br>
+       PULL UP!<br>
+       Low Altitude!<br>
+       ok<br>
+       PULL UP!<br>
+       Low Altitude!<br>
+       Low Altitude!<br>
+       <br>
+    </p></body>
+</html>

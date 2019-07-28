@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 044: Secret Message</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 7<br>This problem has a difficulty of 30</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       The villains of the 90s action thriller Con Air cleverly planned their escape by communicating through hidden messages disguised in a plain letter.  Only with the cover image could the invisible message be revealed.  Their plan was fool proof until Agent Larkin discovered a photo of the Last Supper with holes mysteriously cut into it.  When he placed it on top of the letter the secret rendezvous location was revealed.<br>
+       <br>
+       You will be given a paragraph of text.  Somewhere inside the text is an invisible message.  Your task is to expose the message from this inconspicuous text by laying a cover message on top revealing the correct letters.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob07.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will be a positive integer M denoting how many lines of text the message contains.<br>
+       •	The next M lines will contain the seemingly normal message.<br>
+       •	The next line will contain the start coordinate for the cover message in row,column format.  Since the villains were aspiring computer programmers, they cleverly chose to make the first character in the normal message row 0, column 0.<br>
+       •	The next line will be a positive integer N denoting how many lines of text the cover message contains<br>
+       •	The next N lines will be the cover message.  The cover message may not be the same size as the original message but will fit inside it.   A capital letter O indicates a hole in the cover message where the invisible message can peek through.  A – (dash) is not a hole and does not reveal any piece of the invisible message.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       1<br>
+       9<br>
+       We hold these truths to be self-evident, that all men are created equal,<br>
+       that they are endowed by their Creator with certain unalienable Rights,<br>
+       that among these are Life, Liberty and the pursuit of Happiness. That to<br>
+       secure these rights, Governments are instituted among Men, deriving their<br>
+       just powers from the consent of the governed, --That whenever any Form of<br>
+       Government becomes destructive of these ends, it is the Right of the<br>
+       People to alter or to abolish it, and to institute new Government, laying<br>
+       its foundation on such principles and organizing its powers in such form,<br>
+       as to them shall seem most likely to affect their Safety and Happiness.<br>
+       2,5<br>
+       7<br>
+       -O------O-----O-------------------------<br>
+       --O----O--------------------O------O----<br>
+       ------O---O-----------------------------<br>
+       ----------------------O--------------O--<br>
+       ------------------------------O-----O---<br>
+       -----------------------------------O----<br>
+       -------O---------------------O----------<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should output the message that is cleverly hidden in plain sight.  It should retain case-sensitivity and spaces, but not line breaks.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       meet at midnight<br>
+       <br>
+    </p></body>
+</html>

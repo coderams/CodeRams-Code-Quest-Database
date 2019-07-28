@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 054: Honeycomb</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 17<br>This problem has a difficulty of 95</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       A honeycomb is an efficient way to visualize a set of interconnected spaces.  In a honeycomb, each space is connected to at least two other spaces and at most six other spaces.  Four of these possible connections are diagonal: up left, up right, down left, and down right.  The other two are simply left and right.<br>
+       <br>
+       In this problem, you are a honey bee.  You are currently located at the top of the honeycomb triangle.  You are supposed to leave soon to go gather pollen, but you left your pollen brush in the bottom right corner of the triangle.  And you just remembered that your pollen bag is in the bottom left corner!  You need to collect your things, and you need to do it quickly so you don’t get left behind.  Since the door to the bee hive is just above the top of the honeycomb, you need to find the fastest route to go from the top of the honeycomb to the bottom right, then to the bottom left, and back to the top again.<br>
+       <br>
+       Oh, and since the bees have been hard at work, there is honey in your way.  Each section of the honeycomb has a different amount of honey in it, so each space will take a different amount of time to get through.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob17.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N denoting the number of rows in the honeycomb.  Each honeycomb will have at least 3 rows.<br>
+       •	The next N lines of input will contain a comma separated list of positive integers denoting the time it takes to get through each space in the honeycomb.  The first line will have a single integer, the second line will have 2, and so on.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       5<br>
+       5<br>
+       1,3<br>
+       1,2,4<br>
+       2,4,3,1<br>
+       6,8,3,7,9<br>
+       3<br>
+       1<br>
+       1,10<br>
+       1,1,1<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       For each test case, your program should print out the minimum time required to gather your supplies in order and get back to the top of the honeycomb.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       40<br>
+       7<br>
+       <br>
+    </p></body>
+</html>

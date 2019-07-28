@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 043: Who’s the Valedictorian?</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 6<br>This problem has a difficulty of 30</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Being named valedictorian of the graduating class is a great honor.   While different schools may use slightly different methods of determining the valedictorian, grade point average (GPA) is often the primary measure.  <br>
+       <br>
+       You have been entrusted to identify the valedictorian of each high school graduating class, based on GPA, using the following guidelines:<br>
+       <br>
+       1.	The valedictorian shall be the student with the highest GPA.<br>
+       2.	Possible grades and their grade values are:<br>
+       •	A = 4 points<br>
+       •	B = 3 points<br>
+       •	C = 2 points<br>
+       •	D = 1 point<br>
+       3.	Credit hours for a class can range from 1 to 4 hours.<br>
+       4.	Grade points for a single course = the grade value * credit hours.<br>
+       5.	GPA = total grade points divided by total credit hours.<br>
+       6.	If 2 or more students have identical GPAs, the student with the highest total credit hours is the winner.  There will not be a case where two or more students have identical highest GPAs as well as the same number of credit hours.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob06.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain the name of the high school.<br>
+       •	The second line of each test case will contain a positive integer N denoting the number of students that follow.<br>
+       •	The next N lines will contain individual student information in the following format<br>
+       <br>
+       [Student Name]:[Xn],[Xn],…<br>
+       <br>
+       Where X = the grade achieved in a course and n = the credit hours for that course.  Note that the number of courses may vary from student to student.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       3<br>
+       East High School<br>
+       2<br>
+       Jared:A4,B3,C1,A2,C4,A2,B4 <br>
+       Lauren:B4,A4,A3,A1,C4,C2,A3,A4<br>
+       North High School<br>
+       4<br>
+       John:D1,A2,A4,A3,A4,C2,A4,C2<br>
+       Paul:B4,B3,B4,A4,A2,A4,C1<br>
+       George:A3,A4,C1,C2,B4,A1<br>
+       Ringo:A4,B4,A3,B3,A2,B2<br>
+       West High School<br>
+       3<br>
+       Emma:A3,B4,B4,A4,A4,A3,C1,A3,A1<br>
+       Matt:C4,A4,A4,A3,A2,A2,A1<br>
+       Katie:A1,A3,A3,B4,A4,A3,C2,A4<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should output one line in the following format:<br>
+       <br>
+       [High School Name] = [Valedictorian Name]<br>
+       <br>
+       Where the High School Name is displayed exactly as it appeared in the input file, and Valedictorian Name is the name of the student determined to be the valedictorian, displayed exactly as it appeared in the input file.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       East High School = Lauren<br>
+       North High School = John<br>
+       West High School = Katie<br>
+       <br>
+    </p></body>
+</html>

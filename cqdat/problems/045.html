@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 045: Muddled Music</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 8<br>This problem has a difficulty of 50</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       When your parents wanted to organize their music collection or find a particular song, they would have to dig through piles of cassette tapes, compact discs, or even vinyl records.  What a nightmare!  Luckily for you, almost everyone has their music stored digitally these days.  Finding songs can be a snap – if your music is organized!<br>
+       <br>
+       Your task is to write a program that will read in a list of song – artist pairs and organize them.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob08.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N denoting the number of song – artist pairs that follow.<br>
+       •	The next N lines will contain a song – artist pair.  The song name will be first, followed by a single space, a dash, another single space, and then the artist name.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       5<br>
+       Hello - Adele<br>
+       Yesterday - The Beatles<br>
+       Love Me Like You Do - Ellie Goulding<br>
+       Hey Jude - The Beatles<br>
+       Istanbul - They Might Be Giants<br>
+       4<br>
+       Red Hands - Walk Off The Earth<br>
+       Speeches - Walk Off The Earth<br>
+       R.E.V.O. - WOTE<br>
+       Sometimes - Walk Off The Earth<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should sort the song – artist pairs by the name of the artist first, then by the song title second.  If the name of the artist starts with the word “The”, then ignore that for the purposes of your sorting.  Your program should output the sorted list one song – artist pair per line.  If there are multiple test cases, do not separate the outputs by a blank line.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Hello - Adele<br>
+       Hey Jude - The Beatles<br>
+       Yesterday - The Beatles<br>
+       Love Me Like You Do - Ellie Goulding<br>
+       Istanbul - They Might Be Giants<br>
+       Red Hands - Walk Off The Earth<br>
+       Sometimes - Walk Off The Earth<br>
+       Speeches - Walk Off The Earth<br>
+       R.E.V.O. - WOTE<br>
+       <br>
+    </p></body>
+</html>

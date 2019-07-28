@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 049: Message Integrity</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 12<br>This problem has a difficulty of 55</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       You are on vacation in orbit around the planet Neptune.  You are having so much fun that you are willing to let your inhibitions fly away with the solar wind and take a selfie to send to your relatives on Earth.  Your space phone can send the image to Earth; however, since Neptune and Earth are so far away from each other, radiation interference can corrupt the data.  Furthermore, in order to not tie up the space phone network, data must be sent in small chunks.  Luckily for you, technology has advanced to the point that messages are received in the order they are sent.  Because of the potential for interference, the space phone receiver on Earth may need to ask your space phone for parts of the image multiple times depending on interference and data corruption.  A space phone company, Luca Industries, uses the Patriot Protocol to ensure message integrity.<br>
+       <br>
+       Each Message (M) from your phone has Information (I) and a Remainder (R). Together they form what is known as the Luca Industries Data Chunk.<br>
+       <br>
+       The Luca Industries Data Chunk:<br>
+       <br>
+       <img src="../pics/049_A.png">
+       <br>
+       The protocol provides a way for the message to the receiver to ensure with a high degree of certainty that there was no data corruption.  This is done by adding extra digits (the remainder) to the end of the message.<br>
+       <br>
+       The sender and receiver of any transmission using the Luca Industries Patriot Protocol use a pre-defined polynomial as part of the protocol.  We call this the Patriot Protocol Polynomial, or P3 for short.  For this problem, your P3 is:<br>
+       <br>
+       1011<br>
+       <br>
+       When sending a message from your space phone, this polynomial is used to determine the remainder to append to the information for each message.  This is done using binary long division of the message by the polynomial.  The length of the remainder is the length of the polynomial minus one.<br>
+       <br>
+       <br>
+       Encoding<br>
+       The following example shows how we would encrypt the data 11101110 using the Patriot Protocol:<br>
+       <br>
+       <img src="../pics/049_B.png"
+       <br>
+       The remainder 001 is then appended to the message yielding the Luca Industries Data Chunk 11101110001<br>
+       <br>
+       <br>
+       <br>
+       Decoding<br>
+       <br>
+       The receiving side performs the same binary long division.  If the data integrity was maintained, there should be no remainder after division.  Otherwise, we can assume there was data corruption during transmission.<br>
+       <br>
+       <img src="../pics/049_C.png">
+       <br>
+       Notice that the P3 always slides to a position where its leftmost bit is beneath the leftmost bit in the data that contains a 1.  Also notice that the division is done using the exclusive or function on the bits of the data and the P3 (meaning a 1 results if either the P3 or the data contains a 1, but not if they both do).<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob12.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single 11 digit pre-encoded Luca Industries Data Chunk<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       5<br>
+       11001101110<br>
+       10000111010<br>
+       10101011110<br>
+       10000110111<br>
+       11001111000<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should either output “ok” if the data was not found to be corrupt, or “corrupt” if it was.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       ok<br>
+       corrupt<br>
+       corrupt<br>
+       <br>
+    </p></body>
+</html>

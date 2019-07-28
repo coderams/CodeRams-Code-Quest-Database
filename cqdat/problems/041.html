@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 041: Anagram Checker</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 4<br>This problem has a difficulty of 15</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       An anagram is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase using all the original letters exactly once.  For example, the word STOP can be rearranged into the words TOPS and POTS.  An individual who creates anagrams is called an “anagrammatist.”<br>
+       <br>
+       You have been hired by Anagrammy to create an anagram checker program that they can use to determine whether words submitted by their users are anagrams or not for the purposes of determining a monthly contest winner.  Anagrammy only wants to check word anagrams in their anagram checker and not deal with phrases for their first release.  Anagrammy needs your help in order to officially release their web site.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob04.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	A single line in the format <FIRST WORD>|<SECOND WORD><br>
+       <br>
+       Note: words will be made up of capital letters A-Z only.  There will be no special characters and no lowercase letters.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       11<br>
+       STOP|POTS<br>
+       ADMIRER|MARRIED<br>
+       CAT|DOG<br>
+       CREATIVE|REACTIVE<br>
+       LISTEN|SILENT<br>
+       ANGERED|ENRAGED<br>
+       ELVIS|LIVES<br>
+       RUN|FLY<br>
+       DEDUCTIONS|DISCOUNTED<br>
+       PATERNAL|PARENTAL<br>
+       MIKE|MIKE<br>
+<br>      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should output one line.  If the two words are anagrams, you will print:<br>
+       •	[FIRST WORD]|[SECOND WORD] = ANAGRAM<br>
+       <br>
+       If the two words are not anagrams, you will print:<br>
+       •	[FIRST WORD]|[SECOND WORD] = NOT AN ANAGRAM<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       STOP|POTS = ANAGRAM<br>
+       ADMIRER|MARRIED = ANAGRAM<br>
+       CAT|DOG = NOT AN ANAGRAM<br>
+       CREATIVE|REACTIVE = ANAGRAM<br>
+       LISTEN|SILENT = ANAGRAM<br>
+       ANGERED|ENRAGED = ANAGRAM<br>
+       ELVIS|LIVES = ANAGRAM<br>
+       RUN|FLY = NOT AN ANAGRAM<br>
+       DEDUCTIONS|DISCOUNTED = ANAGRAM<br>
+       PATERNAL|PARENTAL = ANAGRAM<br>
+<br>
+    </p></body>
+</html>

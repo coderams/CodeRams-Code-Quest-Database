@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 051: Turkey!</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 14<br>This problem has a difficulty of 65</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       This problem isn’t about Thanksgiving, it’s about bowling!  If you’ve ever gone bowling, then you know that the scoring can be complicated.  That’s why we want you to write a program to do it.  Just in case you don’t know, here is how a bowling game works:<br>
+       <br>
+       Frames<br>
+       <br>
+       In bowling, each time the pins are set up for you to knock them down is called a frame.  There are ten frames in a bowling game.  You get two chances to knock down all ten pins.  After your second chance, the remaining pins are discarded, and a fresh set of pins is set up to start the next frame.  The only exception to this is if you get a strike or a spare in the 10th frame.  If that happens, the 10th frame will have three chances due to the scoring for strikes and spares (see below).<br>
+       <br>
+       The Scorecard<br>
+       <br>
+       When you roll your bowling ball towards the pins, one of 4 things will happen:<br>
+       •	If you hit no pins, the scoreboard will show a dash (-).  You won’t see any zeroes on a bowling scorecard.<br>
+       •	If you knock down all the pins on your first attempt, it is called a strike.  A strike is denoted by a capital x (X).<br>
+       •	If you knock down all the remaining pins on your second attempt, it is called a spare.  A spare is denoted by a forward slash (/).<br>
+       •	If you knock down some pins but some still remain, you will see the number of pins you knocked down with that ball.<br>
+       <br>
+       <br>
+       <br>
+       Scoring<br>
+       <br>
+       In general, every pin that you knock down gives you one point.  There are two exceptions:<br>
+       •	When you get a spare, you are awarded points for the pins you knocked down to get the spare plus the number of pins you knock down with your next ball.<br>
+       o	For example, if in the first frame of the game you knocked down 4 pins and then 6 pins to get a spare, and in the second frame you knocked down 3 pins with your first ball, the total score for the first frame would be 13 points (4 + 6 + 3).<br>
+       •	When you get a strike, you are awarded points for the pins you knocked down to get the strike (always 10) plus the number of pins you knock down with your next two balls.<br>
+       o	For example, if in the first frame of the game you knock down all 10 pins with your first ball to get a strike, and in the second frame you knock down 4 pins and then 3 pins, the total score for the first frame would be 17 points (10 + 4 + 3).<br>
+       o	Another example: if in the first three frames you get a strike (three strikes in a row is called a turkey, by the way), then the total score in the first frame would be 30 (10 + 10 + 10).  For this reason, the maximum bowling score is 300 (30 points for each of the 10 frames).<br>
+       <br>
+       The 10th Frame<br>
+       <br>
+       The 10th frame is special because it is the last frame.  Here is how the 10th frame works:<br>
+       •	If you do not get a strike or a spare in the 10th frame, then it is scored just like any other frame.<br>
+       •	If you get a spare, you are awarded one more ball to bowl (so you can add those points to the spare).  If you get a strike, no more attempts are awarded.  The 10 pins you knocked down with your extra ball are added to the spare, and the game is over.<br>
+       •	If you get a strike, you are awarded two more balls to bowl (so you can add those points to the strike).  If you get a strike or a spare with your two extra balls, no more attempts are awarded.  The pins you knocked down with your extra balls (20 max) are added to the strike, and the game is over.<br>
+       <br>
+       Whew!  Are you ready?  Let's go bowling!<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob14.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	Each line will contain a single bowling scorecard (10 frames of scores).  Frames will be separated by commas.  There will be no incomplete games.  The only characters besides commas you will encounter will be:<br>
+       o	Integers 1-9<br>
+       o	X (strike)<br>
+       o	/ (spare)<br>
+       o	- (no pins knocked down)<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       3<br>
+       --,--,--,--,--,--,--,--,--,--<br>
+       X,X,X,X,X,X,X,X,X,XXX<br>
+       X,13,X,81,5/,X,18,33,X,X36<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each test case, your program should print out the score of the bowling game.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       0<br>
+       300<br>
+       142<br>
+       <br>
+    </p></body>
+</html>
