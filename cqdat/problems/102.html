@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 102: Thinning</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 17<br>This problem has a difficulty of 90</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Fingerprint authentication is one of the most popular and reliable of the many different methods of biometrics.  It is used to tell the authenticator what you are (fingerprint) instead of what you know (password) or what you have (badge).  A fingerprint consists of a pattern of ridges and valleys that are unique across individuals and do not change throughout our lives.  The descriptions of these patterns are known as minutiae and are points on the fingerprint where the ridges split or end.  Authentication relies on reading these minutiae and comparing it to the user’s template in a database.  Minutia extraction can be done through a series of steps that include binarization, thinning, and minutia detection.  Binarization converts the image of the fingerprint into a binary image where a pixel can only be black or white.  Thinning is then used to reduce the width of the ridges to a length of one pixel for easier detection of minutiae.  Finally, minutiae detection is done by reading each group of pixels and looking for any splitting or ending of the ridges.  This problem is concerned with the thinning step of minutia extraction.<br>
+       <br>
+       <br>
+       <img src="../pics/102_A.png">
+       <br>
+       <br>
+       The Zhan-Suen algorithm is a popular method for thinning a binarized image.  It consists of a series of steps that looks at a pixel’s surrounding pixels and marking it for deletion based on the values of these neighboring pixels.  For example, pixel P which is a 1 (black pixel) has 8 surrounding neighbors as seen below.<br>
+       <br>
+       <img src="../pics/102_B.png">
+       <br>
+       •	N(P) equals the number of neighbors for P that are set to 1 (P1-P8).  <br>
+       Ex: P1, P2, P3, P4, P5 = 1.  So N(P) = 5<br>
+       •	S(P) equals the number of transitions from 0 to 1 (P1->P2, P2->P3, P3->P4,…, P8->P1).<br>
+       Ex: P8(0)->P1(1).  So S(P) = 1<br>
+       <br>
+       The algorithm is as follows:<br>
+       <br>
+       1.	For each pixel P set to 1, mark P for deletion if:<br>
+       a.	 2 ≤ N(P) ≤ 6 AND<br>
+       b.	S(P) = 1 AND<br>
+       c.	P1 * P3 * P5 = 0 AND<br>
+       d.	P3 * P5 * P7 = 0<br>
+       2.	After all pixels in the input have been checked, delete all pixels marked for deletion by setting them to 0<br>
+       3.	For each pixel P set to 1, mark P for deletion if:<br>
+       a.	 2 ≤ N(P) ≤ 6 AND<br>
+       b.	S(P) = 1 AND<br>
+       c.	P1 * P3 * P7 = 0 AND<br>
+       d.	P1 * P5 * P7 = 0<br>
+       4.	After all pixels in the input have been checked, delete all pixels marked for deletion by setting them to 0<br>
+       5.	If any pixels in steps 2 or 4 were deleted, go back to step 1 and read through all pixels again<br>
+       <br>
+       Hint: Do not delete pixels when iterating through the input pixels in steps 1 and 3.  Only mark them for deletion.<br>
+       <br>
+       Hint: If any neighboring pixels are out of bounds of the array, then those neighboring pixels are set to 0.<br>
+       Ex: In pixel P at input_pixel[0,0], the gray indexes will be 0<br>
+       <br>
+       <img src="../pics/102_C.png">
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob17.in.txt will contain a series of 1’s and 0’s representing an image of something.  Each 1 or 0 represents a pixel and the value 1 is the black pixel that will be thinned if it meets the above requirements.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111111111111111111111111<br>
+       111111111111111111111111111111<br>
+       111111111111111111111111111111<br>
+       111111111111111111111111111111<br>
+       111111111111111111111111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       111111111100000000001111111111<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your output should be in the same 0 and 1 format as the input with the 1’s thinned from the algorithm.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       000000000000000000000000000000<br>
+       000000000000000000000000000000<br>
+       000000000000000000000000000000<br>
+       000000000000000000000000000000<br>
+       000000000000000000000000000000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000011111111111111111111100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000010000000000000000000100000<br>
+       000000000000000000000000000000<br>
+       000000000000000000000000000000<br>
+       000000000000000000000000000000<br>
+       000000000000000000000000000000<br>
+       <br>
+    </p></body>
+</html>

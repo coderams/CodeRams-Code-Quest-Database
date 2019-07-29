@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 081: Caesar Scytale</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 12<br>This problem has a difficulty of 55</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       The Caesar and Syctale ciphers are very old ciphers used by the ancient Greeks to encrypt secret messages.  In this problem you will be decrypting a message that has been encoded using both methods.<br>
+       <br>
+       </p><h1 id="spec">The Caesar Cipher</h1><p id="ptext"><br>
+       <br>
+       The Caesar cipher is a form of a substitution cipher because it substitutes letters for other letters.  A Caesar cipher just shifts letters however many positions to the left or the right.  For example:<br>
+       <br>
+       LOCKHEED --> right shift 3 --> ORFNKHHG<br>
+       <br>
+       Letters are shifted as if we were using an alphabet ring.  That is, shifting Z to the right produces an A, and so forth.  So, the string “Zebra” shifted 1 position to the right would be “Afcsb”.  Note that capitalization is retained.<br>
+       <br>
+       </p><h1 id="spec">The Scytale Cipher</h1><p id="ptext"><br>
+       <br>
+       The Scytale cipher is a form of transposition in that it rearranges letters into different positions.  In a Scytale cipher, you would wrap a very long piece of paper around a stick and write your message going across.  The message would be unreadable when unwrapped.  You had to use the same stick to decrypt the message.  This is similar to picking a two dimensional array and filling it with the message.  For example, the word “LOCKHEED” using a 4x3 array would produce this:<br>
+       <img src="../pics/081_A.png"><br>
+       A capital X is used to pad the array if the message doesn’t fill the array exactly.  To “unravel” the paper, read the array from top to bottom, left to right:<br>
+       <br>
+       LOCKHEED --> LKEXOHDXCEXX<br>
+       <br>
+       <br>
+       <br>
+       </p><h1 id="spec">Putting Them Together</h1><p id="ptext"><br>
+       <br>
+       For this problem, you must decrypt a message that was encrypted using the Caesar cipher followed by a Scytale.  Let’s look at the “LOCKHEED” example:<br>
+       <br>
+       LOCKHEED --> Caesar +3 --> ORFNKHHG --> Scytale 4x3 --> ONHXRKGXFHXX<br>
+       <br>
+       There are a couple of things that are important to note:<br>
+       •	If the input string was too short to fill the array exactly, the encrypted Scytale string will have more characters than the original decrypted message.  Be careful when printing your output because of this.  You can assume that the original message does not end in a capital X.<br>
+       •	You will not know the array size that was used to perform the Scytale cipher, but it is guaranteed that the number of characters in the encoded input file will fit exactly into the array used.<br>
+       •	You will not know the shift value that was used to perform the Caesar cipher, but the original text is guaranteed to have the word “Dear” in it.  Shifting the letters in the word “Dear” n times produces no other word in the English language, so it is a sufficient key to know that the decoding has been successful.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob12.in.txt will contain some number of lines of encoded text.  The file in its entirety should be decoded all at once – each line is not separately encoded.  Rather, the lines together form one long string for encoding and decoding purposes.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       JouyWOjkg<br>
+       rkgjIacuyzrgxguk<br>
+       oszoXxeejyreZ<br>
+       yXJZokzrh<br>
+       ngX<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should output the decoded message.  Your line lengths should match the input file, with the additional padded characters (if any) removed from the end of the file.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       DearDiary<br>
+       TodayisCodeQuest<br>
+       <br>
+    </p></body>
+</html>

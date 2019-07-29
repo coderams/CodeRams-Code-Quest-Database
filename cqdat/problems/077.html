@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 077: Rectangle Art</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 8<br>This problem has a difficulty of 55</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Have you ever seen a spray paint artist?  Their art depends on layering – they spray lots of colors on top of each other and then scrape paint away to make beautiful scenes.  In this problem, you will deal with layered rectangles in a workspace grid.  Your art will involve these rectangles layered on top of each other.<br>
+       <br>
+       Lockheed's stealth technology has influenced the world of rectangle art by providing rectangle artists with a mysterious material that turns clear when there are even numbers of layers of that material touching each other.  So, any square in the grid that is covered by an odd number of rectangles appears covered, while squares in the grid with an even number of rectangles covering a space appear to be uncovered.<br>
+       <br>
+       Your task is to write a program that will compute what a workspace will look like after placing these special rectangles down.  All your inputs will be given in Cartesian format.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob08.in.txt will contain the following:<br>
+       •	The first line of the file will be the workspace area in X,Y format – meaning that the workspace area is X units wide and Y units tall.  The origin will be in the bottom left corner of the workspace, so all coordinates will be positive.  The numbers will be separated by a single comma.<br>
+       •	The rest of the lines in the file will describe the location of the rectangles in the workspace.  Each line will contain coordinates for two points that will be the diagonal corners of the rectangle.  The x and y coordinates for each point will be separated by a single comma, and there will be a single space between the two coordinates.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       20,20<br>
+       0,10 10,20<br>
+       20,9 10,20<br>
+       0,0 20,9<br>
+       4,13 6,15<br>
+       14,15 16,13<br>
+       3,6 4,8<br>
+       4,5 5,7<br>
+       5,4 6,6<br>
+       6,4 7,5<br>
+       6,4 14,3<br>
+       13,4 15,5<br>
+       14,5 16,6<br>
+       15,6 17,7<br>
+       17,8 16,7<br>
+       0,9 10,10<br>
+       0,20, 20,0<br>
+       0,0 20,1<br>
+       0,19, 20,20<br>
+       0,1 1,19<br>
+       19,1 20,19<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your output should produce a grid where a space means a spot looks clear and an asterisk means a spot looks covered.<br>
+       <br>
+     </p><h1 id="spec">Example Output:</h1><pre id="code"><br>
+********************
+*                  *
+*                  *
+*                  *
+*                  *
+*   **        **   *
+*   **        **   *
+*                  *
+*                  *
+*                  *
+*                  *
+*                  *
+*  *            *  *
+*  **          **  *
+*   **        **   *
+*    **      **    *
+*     ********     *
+*                  *
+*                  *
+********************
+       <br>
+    </pre></body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 099: Word Search</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 14<br>This problem has a difficulty of 60</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Word search puzzles have provided a challenging game for all ages since they were first introduced over 40 years ago.  They require a keen eye and plenty of patience to complete.  Seemingly random letters are aligned in a square or rectangular grid.  Generally, they are kept to 30x30 or less but they can be of any size.  Given a list of words, the solver must find every listed word in the grid.  The words can be found in the following different directions: across, up, down, diagonally, and reversed in any direction.   Your task is to create a program that will find the words in the grid.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob14.in.txt will contain a grid of uppercase letters.  The grid can be up to any size and will not necessarily be square.  The line above the grid will have the string “#PUZZLE” without the quotes.   Following the grid there will be a list of words, each on a separate line.  The line above the beginning word in the list will have the string “#WORDS” without the quotes.  Remember that the first row and first column of the grid start at 0, not 1.  In the following example, the first letter “J” is at location [0,0], not [1,1].<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       #PUZZLE<br>
+       JOYQFT<br>
+       KIRELO<br>
+       BHJASP<br>
+       MITEQA<br>
+       UJHGJI<br>
+       GTKRUO<br>
+       <br>
+       #WORDS<br>
+       THE<br>
+       JOY<br>
+       TOP<br>
+       OUR<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       The output of your program should list the words, sorted alphabetically, each followed by the beginning letter’s location in the grid in [row,column] coordinate format.  Make sure to place a single space between the word and its location.  Each word / location pair should be on its own line.  All words should be found.  If there are two or more instances of a word found, report the one with the lowest column value coordinate.  If two or more instances have the same x value, report the one with the lowest row value coordinate.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       JOY [0,0]<br>
+       OUR [5,5]<br>
+       THE [5,1]<br>
+       TOP [0,5]<br>
+       <br>
+    </p></body>
+</html>

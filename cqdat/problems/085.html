@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 085: Treasure Hunt</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 16<br>This problem has a difficulty of 100</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Treasure hunting is a lost art form because of all this newfangled technology that everyone uses today.  Did Captain Hook use Google Maps to find his way around the Neverland seas?  No.  He read a map.  And so will you in this problem.  Happy hunting!  Oh, and bring a torch because it’s dark in there.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob16.in.txt will contain a single treasure map.  Here is the key to reading the map and finding the treasure:<br>
+       •	H is the starting position of our treasure hunter (that’s you).  Don’t get too lost!<br>
+       •	T is the treasure that you are trying to find.  You win by stepping on this space.<br>
+       •	t is the symbol for a torch.  You start out with 15 steps worth of torch light, and every torch you find gives you 15 more.  The torches are unlit when you collect them, so assume you light them just as the previous torch is going out.  So, picking up a torch on your first step would mean that you would have 29 more steps worth of light (15 to start + 15 for picking up a torch -1 for the first step).  Each torch can only be collected and used once.  You must step on a torch’s space to collect it.<br>
+       •	x is an immovable and impassable barrier, like a cave wall.  You can’t step on an x.<br>
+       •	| and - denote the barrier of the cave.  You cannot step on these spaces either.  Don’t worry about how you got in the cave or how you’ll get out – finding the treasure will distract you from things like how to survive in a cave that apparently has no exit.  <br>
+       •	Stepping on a space more than once is permitted (and in some cases required – see the example problems).  However, as previously mentioned stepping on a torch space twice will only give you extra light the first time.<br>
+       •	You can move up, down, left, and right only.  Moving to a diagonal space takes two moves.<br>
+       <br>
+       <br>
+       <br>
+     </p><h1 id="spec">Example Input:</h1><pre id="code">
+
+----------------------
+|xxxxt   x  xxxxxxxxx|
+|xxx     x xxx   Txxx|
+|xx  xx     x    xxxx|
+|xx   xx xx    xxxxxx|
+|xxx  xxxxxxxxxxxxxxx|
+|xxx  xxx    t  xxxxx|
+|xxx xxxx x xxx  xxxx|
+|xxt        xxxx  xxx|
+|x  xxxxxxxxxt   xxxx|
+|xxxxxt    xxxx  xxxx|
+|xxx  xx  xxx   xxxxx|
+|xxxxx        xxxxxxx|
+|H      xxxxxxxxxxxxx|
+----------------------
+      </pre>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should output a single integer: the least number of steps required to reach the treasure before (or just as) your light runs out.  You can win the game by stepping on the treasure with your last step of light.<br>
+       <br>
+     </p><h1 id="spec">Example Output:</h1><p id="code"><br>73
+       <br><br>
+    </p></body>
+</html>

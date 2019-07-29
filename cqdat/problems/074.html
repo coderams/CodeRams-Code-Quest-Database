@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 074: Book Worm</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 5<br>This problem has a difficulty of 25</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       The invention of e-reading technology on computers, cell phones, tablets, and e-readers is revolutionizing the book industry.  In years past, there were a handful of publishers capable of bringing a book to publication.  Now, almost anyone with a computer can become an independent publishing house.  As the number of publishers grow, so too will the number of books.  This is beneficial to authors and consumers, but can be problematic for standards organizations that are charged with maintaining order among industries.<br>
+       <br>
+       A book’s ISBN (International Standard Book Number) is a way to uniquely identify a work while simultaneously providing information about that work.  ISBNs currently have 13 digits broken down into the following sections:<br>
+       1.	A 3 digit prefix assigned by the GS1 standards organization (currently 978 or 979, but they could be anything).<br>
+       2.	A registration group number that varies from 1 to 5 digits.  This number identifies the region or language of the work.<br>
+       3.	A registrant element, which identifies a specific publisher.<br>
+       4.	A publication element, which identifies a work published by the publisher.<br>
+       5.	A single check digit (used to verify the legitimacy of the ISBN).<br>
+       <br>
+       The check digit is assigned in such a way that taking the sum of all 13 numbers, each multiplied by a factor alternating between 1 and 3, is a factor of 10.  For example, for ISBN 978-0-306-40615-7:<br>
+       <br>
+        9*1 + 7*3 + 8*1 + 0*3 + 3*1 + 0*3 + 6*1 + 4*3 + 0*1 + 6*3 + 1*1 + 5*3 + 7*1<br>
+       =  9 +  21 +   8 +   0 +   3 +   0 +   6 +  12 +   0 +  18 +   1 +  15 +   7<br>
+       = 100<br>
+       <br>
+       Since 100 is a factor of 10, this is a valid ISBN number.  There is no standard format for an ISBN.  ISBNs can contain dashes or other separating characters (spaces, underscores, etc.) that can make them more readable by humans, or they can just be 13 digits in a row.  Your job is to validate a list of ISBN candidate numbers.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob05.in.txt will contain a list of ISBN numbers, one per line, which you must validate.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       978-0-306-40615-7<br>
+       9788175257665<br>
+       1234567890123<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       For each ISBN number your program should output one of the following:<br>
+       •	If the ISBN is valid, output the word VALID<br>
+       •	If the ISBN is invalid, output the value that the check bit should have been to make the ISBN valid<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       VALID<br>
+       VALID<br>
+       8<br>
+       <br>
+    </p></body>
+</html>

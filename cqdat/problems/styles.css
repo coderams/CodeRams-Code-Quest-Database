@@ -1,0 +1,408 @@
+body {
+	font-family: 'Montserrat'
+}
+.center {
+	/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#statement {
+	font-size: 60px;
+	text-align: center;
+	color: rgb(0, 100, 200);
+}
+#spec {
+	font-size: 30px;
+	color: rgb(0, 100, 200);
+	margin-left: 50px;
+}
+#ptext {
+	font-size: 15px;
+	text-align: left;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 10px
+}
+#code {
+	background-color: rgb(240, 240, 240);
+	font-size: 15px;
+	text-align: left;
+	margin-left: 60px;
+	margin-right: 100px;
+	padding-left: 50px;
+	font-family: monospace;
+}
+#sub {
+	font-size: 20px;
+	text-align: center;
+	color: rgb(0, 80, 180);
+}
+.cr {
+	font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'Rajdhani'
+
+}
+#crblack {
+	color: rgb(0, 0, 0);
+}
+#p1 {
+    background-color: rgb(10, 190, 0)
+}
+#p2 {
+    background-color: rgb(10, 190, 0)
+}
+#p3 {
+    background-color: rgb(20, 180, 0)
+}
+#p4 {
+    background-color: rgb(30, 170, 0)
+}
+#p5 {
+    background-color: rgb(40, 160, 0)
+}
+#p6 {
+    background-color: rgb(50, 150, 0)
+}
+#p7 {
+    background-color: rgb(70, 130, 0)
+}
+#p8 {
+    background-color: rgb(70, 130, 0)
+}
+#p9 {
+    background-color: rgb(80, 120, 0)
+}
+#p10 {
+    background-color: rgb(90, 110, 0)
+}
+#p11 {
+    background-color: rgb(100, 100, 0)
+}
+#p12 {
+    background-color: rgb(100, 100, 0)
+}
+#p13 {
+    background-color: rgb(110, 90, 0)
+}
+#p14 {
+    background-color: rgb(120, 80, 0)
+}
+#p15 {
+    background-color: rgb(110, 90, 0)
+}
+#p16 {
+    background-color: rgb(130, 70, 0)
+}
+#p17 {
+    background-color: rgb(80, 120, 0)
+}
+#p18 {
+    background-color: rgb(180, 20, 0)
+}
+#p19 {
+    background-color: rgb(170, 30, 0)
+}
+#p20 {
+    background-color: rgb(10, 190, 0)
+}
+#p21 {
+    background-color: rgb(20, 180, 0)
+}
+#p22 {
+    background-color: rgb(10, 190, 0)
+}
+#p23 {
+    background-color: rgb(30, 170, 0)
+}
+#p24 {
+    background-color: rgb(50, 150, 0)
+}
+#p25 {
+    background-color: rgb(50, 150, 0)
+}
+#p26 {
+    background-color: rgb(50, 150, 0)
+}
+#p27 {
+    background-color: rgb(70, 130, 0)
+}
+#p28 {
+    background-color: rgb(80, 120, 0)
+}
+#p29 {
+    background-color: rgb(110, 90, 0)
+}
+#p30 {
+    background-color: rgb(90, 110, 0)
+}
+#p31 {
+    background-color: rgb(140, 60, 0)
+}
+#p32 {
+    background-color: rgb(130, 70, 0)
+}
+#p33 {
+    background-color: rgb(160, 40, 0)
+}
+#p34 {
+    background-color: rgb(150, 50, 0)
+}
+#p35 {
+    background-color: rgb(160, 40, 0)
+}
+#p36 {
+    background-color: rgb(190, 10, 0)
+}
+#p37 {
+    background-color: rgb(200, 0, 0)
+}
+#p38 {
+    background-color: rgb(10, 190, 0)
+}
+#p39 {
+    background-color: rgb(40, 160, 0)
+}
+#p40 {
+    background-color: rgb(20, 180, 0)
+}
+#p41 {
+    background-color: rgb(30, 170, 0)
+}
+#p42 {
+    background-color: rgb(40, 160, 0)
+}
+#p43 {
+    background-color: rgb(60, 140, 0)
+}
+#p44 {
+    background-color: rgb(60, 140, 0)
+}
+#p45 {
+    background-color: rgb(100, 100, 0)
+}
+#p46 {
+    background-color: rgb(90, 110, 0)
+}
+#p47 {
+    background-color: rgb(90, 110, 0)
+}
+#p48 {
+    background-color: rgb(100, 100, 0)
+}
+#p49 {
+    background-color: rgb(110, 90, 0)
+}
+#p50 {
+    background-color: rgb(130, 70, 0)
+}
+#p51 {
+    background-color: rgb(130, 70, 0)
+}
+#p52 {
+    background-color: rgb(130, 70, 0)
+}
+#p53 {
+    background-color: rgb(190, 10, 0)
+}
+#p54 {
+    background-color: rgb(190, 10, 0)
+}
+#p55 {
+    background-color: rgb(10, 190, 0)
+}
+#p56 {
+    background-color: rgb(10, 190, 0)
+}
+#p57 {
+    background-color: rgb(30, 170, 0)
+}
+#p58 {
+    background-color: rgb(50, 150, 0)
+}
+#p59 {
+    background-color: rgb(70, 130, 0)
+}
+#p60 {
+    background-color: rgb(110, 90, 0)
+}
+#p61 {
+    background-color: rgb(100, 100, 0)
+}
+#p62 {
+    background-color: rgb(100, 100, 0)
+}
+#p63 {
+    background-color: rgb(120, 80, 0)
+}
+#p64 {
+    background-color: rgb(80, 120, 0)
+}
+#p65 {
+    background-color: rgb(130, 70, 0)
+}
+#p66 {
+    background-color: rgb(150, 50, 0)
+}
+#p67 {
+    background-color: rgb(170, 30, 0)
+}
+#p68 {
+    background-color: rgb(180, 20, 0)
+}
+#p69 {
+    background-color: rgb(200, 0, 0)
+}
+#p70 {
+    background-color: rgb(10, 190, 0)
+}
+#p71 {
+    background-color: rgb(40, 160, 0)
+}
+#p72 {
+    background-color: rgb(30, 170, 0)
+}
+#p73 {
+    background-color: rgb(70, 130, 0)
+}
+#p74 {
+    background-color: rgb(50, 150, 0)
+}
+#p75 {
+    background-color: rgb(70, 130, 0)
+}
+#p76 {
+    background-color: rgb(90, 110, 0)
+}
+#p77 {
+    background-color: rgb(110, 90, 0)
+}
+#p78 {
+    background-color: rgb(100, 100, 0)
+}
+#p79 {
+    background-color: rgb(100, 100, 0)
+}
+#p80 {
+    background-color: rgb(120, 80, 0)
+}
+#p81 {
+    background-color: rgb(110, 90, 0)
+}
+#p82 {
+    background-color: rgb(160, 40, 0)
+}
+#p83 {
+    background-color: rgb(140, 60, 0)
+}
+#p84 {
+    background-color: rgb(190, 10, 0)
+}
+#p85 {
+    background-color: rgb(200, 0, 0)
+}
+#p86 {
+    background-color: rgb(10, 190, 0)
+}
+#p87 {
+    background-color: rgb(20, 180, 0)
+}
+#p88 {
+    background-color: rgb(30, 170, 0)
+}
+#p89 {
+    background-color: rgb(20, 180, 0)
+}
+#p90 {
+    background-color: rgb(40, 160, 0)
+}
+#p91 {
+    background-color: rgb(50, 150, 0)
+}
+#p92 {
+    background-color: rgb(60, 140, 0)
+}
+#p93 {
+    background-color: rgb(50, 150, 0)
+}
+#p94 {
+    background-color: rgb(60, 140, 0)
+}
+#p95 {
+    background-color: rgb(80, 120, 0)
+}
+#p96 {
+    background-color: rgb(90, 110, 0)
+}
+#p97 {
+    background-color: rgb(90, 110, 0)
+}
+#p98 {
+    background-color: rgb(100, 100, 0)
+}
+#p99 {
+    background-color: rgb(120, 80, 0)
+}
+#p100 {
+    background-color: rgb(160, 40, 0)
+}
+#p101 {
+    background-color: rgb(140, 60, 0)
+}
+#p102 {
+    background-color: rgb(180, 20, 0)
+}
+#crred {
+    color: rgb(255, 0, 0);
+}
+#mainTitle {
+    color: rgb(0, 125, 0);
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Montserrat';
+}
+#menu {
+	margin-bottom: 20px;
+}
+#menu ul {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+#menu ul li {
+	display: inline;
+	white-space: normal;
+}
+#menu ul li a {
+	text-decoration: none;
+	padding: .8em 4em;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 140, 200);
+	border-radius: 3px 3px 3px 3px;
+}
+
+#probs ul {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+#probs ul li {
+	display: nowrap;
+	white-space: normal;
+	margin-bottom: 40px;
+}
+#probs ul li a {
+	text-decoration: none;
+	padding: 1em 10em;
+	color: rgb(255, 255, 255);
+
+	border-radius: 3px 3px 3px 3px;
+}
+#htext {
+	font-size: 20px;
+	text-align: center;
+}
