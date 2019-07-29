@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 069: RPN</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 15<br>This problem has a difficulty of 100</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Reverse Polish Notation (RPN, also called postfix notation) is a mathematical notation where the operator (+, -, *, /, etc.) follows the operands.  For example, 2 + 3 in postfix notation is 2 3 +.  This notation has the advantage that it’s easy to evaluate in a computer program and it doesn’t require parenthesis to handle order of operations.<br>
+       <br>
+       Your task is to write a program that will convert expressions from algebraic (also called infix) notation to RPN.<br>
+       <br>
+       Some Notes on RPN<br>
+       <br>
+       •	Operators use the two operands to their left if you’re looking at the final RPN equation.  Once used, the result becomes available as an operand for another operation.<br>
+       o	A + B – C * D --> A B + C D * -<br>
+       <br>
+       In this example, A and B are added together and saved for later.  C and D are multiplied together and saved for later.  The minus sign at the end acts on both saved values and subtracts the two.<br>
+       •	Operators are used from left to right.  Note the difference between these two lines because we know multiplication has to happen before addition.  The order of the operators is switched in the second example to account for the order in which the operations must happen.<br>
+       o	A * B + C --> A B * C + <br>
+       o	A + B * C --> A B C * +<br>
+       •	Exponentiation is right-associative (meaning if two exponent operations are next to each other, they happen from right to left instead of left to right):<br>
+       o	2 ^ 2 ^ 3 is the same as 2 ^ (2 ^ 3), not (2 ^ 2) ^ 3<br>
+       •	The operands should stay in the same order in your output.  For example, if you were given the expression A + B, the answers A B + and B A + are mathematically equivalent because of the commutative property of addition.  However, for the purposes of this problem, the only acceptable answer would be A B +.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob15.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N denoting the number of input lines that follow.<br>
+       •	The next N lines will each contain an expression in regular algebraic notation for you to convert.  Each character in the expression will be separated by a space.<br>
+       •	The only non-operand characters you will encounter are PEMDAS characters:<br>
+       •	( and ) for grouping<br>
+       •	^ for exponentiation<br>
+       •	* and / for multiplication and division<br>
+       •	+ and – for addition and subtraction<br>
+       •	If you are unfamiliar with PEMDAS, it is a pneumonic device for remembering the order in which operations are performed:<br>
+       •	Parentheses first (innermost to outermost)<br>
+       •	Exponentiation second<br>
+       •	Multiplication and Division next (they have the same precedence)<br>
+       •	Addition and Subtraction last (they have the same precedence)<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       2<br>
+       a * b + c<br>
+       2 ^ 2 ^ 3<br>
+       3<br>
+       ( a - b ) * c / d + e / f<br>
+       ( ( a + b ) - ( c - d ) ^ x ) + q * w<br>
+       A + B * C - D<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       Your program should convert the expressions in the order they are read to RPN.  All your output characters should be separated by a single space.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       a b * c +<br>
+       2 2 3 ^ ^<br>
+       a b – c * d / e f / +<br>
+       a b + c d - x ^ - q w * +<br>
+       A B C * + D <br>
+       <br>
+    </p></body>
+</html>

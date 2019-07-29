@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 063: Reflection</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 9<br>This problem has a difficulty of 60</em></p>      <p id="ptext">       Input File:  Prob09.in.txt<br>
+       Output: Your output needs to be directed to stdout (i.e., using System.out.println())<br>
+       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Reflections – you deal with them on a daily basis when you look in the mirror or drive a car.  In your math classes, you may have dealt with functions that get reflected.  Today, we will be dealing with pictures that will be reflected (sort of).<br>
+       <br>
+       You will be given a picture built out of ASCII characters, and you will be asked to build the reflection of the picture you are given in one of three ways:<br>
+       •	Around the x axis: for this type of reflection, you will flip the picture up and down.  Be careful not to add extra spaces at the ends of lines during this type of reflection.<br>
+       •	Around the y axis: for this type of reflection, you will flip the picture left and right.  Since the starting picture will be left justified, your reflected picture should be right justified.<br>
+       •	Around the line y=x: for this type of reflection, the x values and y values are switched.  This type of reflection is how you find the inverse of a function in mathematics.  For our purposes, the origin will be the top left of the picture.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob09.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will be a positive integer N denoting how many lines tall the picture is.<br>
+       •	The next N lines of each test case will contain the picture.  The lines might vary in length, so you will need to take this into account when performing the reflection.<br>
+       •	The last line of each test case will contain one of these three strings:<br>
+       o	X – if you should reflect the picture up and down<br>
+       o	Y – if you should reflect the picture left and right<br>
+       o	INVERSE – if you should switch the x and y values<br>
+       <br>
+       <br>
+       <br>
+     </p><h1 id="spec">Example Input:</h1><pre id="code"><br>
+       3<br>
+       19<br>
+            ____________________________<br>
+           !\_________________________/!\<br>
+           !!                         !! \<br>
+           !!                         !!  \<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  /<br>
+           !!_________________________!! /<br>
+           !/_________________________\!/<br>
+              __\_________________/__/!_<br>
+             !_______________________!/<br>
+           ________________________<br>
+          /oooo  oooo  oooo  oooo /!<br>
+         /ooooooooooooooooooooooo/ /<br>
+        /ooooooooooooooooooooooo/ /<br>
+       /C=_____________________/_/<br>
+       X<br>
+       6<br>
+          _____          _         ____                  _     _____            _        _ <br>
+         / ____|        | |       / __ \                | |   |  __ \          | |      | |<br>
+        | |     ___   __| | ___  | |  | |_   _  ___  ___| |_  | |__) |___   ___| | _____| |<br>
+        | |    / _ \ / _` |/ _ \ | |  | | | | |/ _ \/ __| __| |  _  // _ \ / __| |/ / __| |<br>
+        | |___| (_) | (_| |  __/ | |__| | |_| |  __/\__ \ |_  | | \ \ (_) | (__|   <\__ \_|<br>
+         \_____\___/ \__,_|\___|  \___\_\\__,_|\___||___/\__| |_|  \_\___/ \___|_|\_\___(_)<br>
+       Y<br>
+       8<br>
+            _>-.    ____    .-<_<br>
+             >-.\.-'____`-./ ,<<br>
+               .','"\__/"`.`<_,-,<br>
+             _/ / \_/  \_/ \!  (D\<br>
+              \ \_/ \__/ \_/!_ (D/<br>
+               `.`../__\,.'.< `-`<br>
+            _>-'/`-.____.-'\ `<_<br>
+             >-'            `-<<br>
+       INVERSE<br>
+       <br>
+     </pre><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should output the appropriate picture after the specified reflection.<br>
+       <br>
+     </p><h1 id="spec">Example Output:</h1><pre id="code"><br>
+       /C=_____________________/_/         <br>
+        /ooooooooooooooooooooooo/ /        <br>
+         /ooooooooooooooooooooooo/ /       <br>
+          /oooo  oooo  oooo  oooo /!       <br>
+           ________________________        <br>
+             !_______________________!/    <br>
+              __\_________________/__/!_   <br>
+           !/_________________________\!/  <br>
+           !!_________________________!! / <br>
+           !!                         !!  /<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  !<br>
+           !!                         !!  \<br>
+           !!                         !! \ <br>
+           !\_________________________/!\  <br>
+            ____________________________   <br>
+        _        _            _____     _                  ____         _          _____   <br>
+       | |      | |          \ __  |   | |                \ __ /       | |        |____ /  <br>
+       | |_____ | |___   ___| )__| |  _| |___  ___  _   _| |  | |  ___ | |__   ___     | | <br>
+       | |__ / /| |__ / \ _ //  _  | |__ |__ /\ _ /| | | | |  | | \ _ /| `_ / \ _ /    | | <br>
+       |_\ __\<   |__( | )_( \ \ | |  _| \ __\/__  | |_| | |__| | /__  | |_( | )_( |___| | <br>
+       )_(___\_\|_|___\ /___\_\  |_| |__\/___||___\|_,__\\_\___\  |___\|_,__\ /___\_____\  <br>
+               <br>
+               <br>
+               <br>
+       _     _ <br>
+       >> _  >><br>
+       -- /\ --<br>
+       ...  `''<br>
+        \'/\./ <br>
+        ., _`` <br>
+        -'\/.- <br>
+        '"_ .. <br>
+       __\/\/_ <br>
+       ___ ___ <br>
+       ___ ___ <br>
+       __/\/\_ <br>
+        `"_ ,. <br>
+        -`/\.- <br>
+        .. _'' <br>
+        /`\/.\ <br>
+       . <!!< `<br>
+       -,_ _ `-<br>
+       <<,  `<<<br>
+       _ -((-_ <br>
+         ,DD`  <br>
+          \/   <br>
+       <br></pre>
+       </body>
+</html>

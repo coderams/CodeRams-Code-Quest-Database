@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 058: Is It Hot in Here?</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 4<br>This problem has a difficulty of 25</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Talking about the weather has been one of the most common small-talk subjects since the beginning of time.  “Whew, can you believe this heat wave?  It’s been 38 degrees for days!”  Wait, what?  Anyone who lives in Texas should know better than to complain when the temperature gets above 38 degrees.  Or should they?  It all depends on the temperature scale!<br>
+       <br>
+       Here in the United States, we still use the Fahrenheit temperature scale, while most of the rest of the world uses the Celsius scale.  Just like talking to people who speak different languages, if we want to be able to talk about the weather with someone who uses a different scale, we need a translator.  That’s where you come in!<br>
+       <br>
+       Your job is to write a temperature translator program.  Here is a formula that relates a temperature measured in Fahrenheit (F) to a temperature measured in Celsius (C):<br>
+       <br>
+       <img src="../pics/058_A.png">
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob04.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N denoting the number of temperature conversions that follow.<br>
+       •	The next N lines will contain a single temperature value in the following format:<br>
+       <br>
+       [Number] [Scale]<br>
+       <br>
+       The number and the scale will be separated by a single space.  The number could have a decimal point, but will have no more than one digit after the decimal.  The scale will either be C or F.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       3<br>
+       0 C<br>
+       212 F<br>
+       50.0 C<br>
+       4<br>
+       98.6 F<br>
+       -6 C<br>
+       40.1 C<br>
+       123.4 F<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should convert the temperature to the other scale and print it out for easy reading.  Your output lines should follow the following format:<br>
+       <br>
+       [OriginalNumber] [OriginalScale] = [ConvertedNumber] [NewScale]<br>
+       <br>
+       Your original number should appear just as it is from the input file, but your converted number should always be printed to the nearest tenth.  See Appendix A for more information on how you should round.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       0 C = 32.0 F<br>
+       212 F = 100.0 C<br>
+       50.0 C = 122.0 F<br>
+       98.6 F = 37.0 C<br>
+       -6 C = 21.2 F<br>
+       40.1 C = 104.2 F<br>
+       123.4 F = 50.8 C<br>
+       <br>
+    </p></body>
+</html>

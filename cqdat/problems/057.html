@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 057: Leap Year</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 3<br>This problem has a difficulty of 15</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Not all years are created equal.  Every now and then (approximately every four years), we get an extra day to enjoy because of a leap year.  Leap years occur because we need to keep the calendar year in sync with the astronomical year, so we insert an extra day (February 29th) to correct the difference between the calendars.<br>
+       <br>
+       Most of the world uses the Gregorian calendar to keep track of the calendar year.  The Gregorian calendar was first used in the year 1582, so there were no leap years before that time.  Under this calendar system, years that are not leap years are called common years.  Here is the pseudo code for telling the difference between common years and leap years:<br>
+       <br>
+       •	If the year is prior to 1582, then it is a common year<br>
+       •	Else if the year is not divisible by 4 then it is a common year<br>
+       •	Else if the year is not divisible by 100 then it is a leap year<br>
+       •	Else if the year is not divisible by 400 then it is a common year<br>
+       •	Else the year is a leap year<br>
+       <br>
+       Your task is to write a program that will tell whether or not a given year was a leap year.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob03.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive number N denoting the number of years that follow<br>
+       •	The next N lines will contain a single year per line<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       1<br>
+       1984<br>
+       3<br>
+       1999<br>
+       2001<br>
+       4000<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should simply print the word Yes if the year was (or will be) a leap year, and No if it was not (or will not be).<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Yes<br>
+       No<br>
+       No<br>
+       Yes<br>
+       <br>
+    </p></body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 068: CSI</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 14<br>This problem has a difficulty of 90</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Last month Bobby reported to the police that someone broke into his house and stole his favorite pair of jeans.  He was extremely distraught and asked the police to do whatever it takes to find the burglar.  The police looked for DNA samples from around the house.  Luckily they found only one, and they believe it belongs to the burglar.  Unfortunately, the police’s database searching program is on the fritz so they want you to create a program to search their database of all the people in the town and find the closest DNA match.<br>
+       <br>
+       DNA samples are rarely perfect – parts of a sample could be missing or contaminated.  Therefore, a direct match is not usually found.  The police use the “longest common subsequence” method to find the most likely suspect.  Two strings share a common subsequence if they have the same set of letters in the same order, but the letters in the subsequence do not necessarily have to be adjacent to one another.<br>
+       <br>
+       For example:<br>
+       •	The string ABCDEFGHIJKLMNOPQRSTUVWXYZ has subsequences KNOT and MOW, but not PAT.<br>
+       •	The longest common subsequence between the strings ABAFCDEF and BCFEDE is BCDE.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob14.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a string representing the DNA sequence found by the police.<br>
+       •	The second line of each test case will contain a positive integer N denoting the number of items in the town’s database.<br>
+       •	The next N lines of each test case will contain one item in the town’s DNS database.  Each item will be in the form NAME=DNA_STRING.  The DNA sequence letters is made up of the letters A, C, G, and T (A: Ademine, C: Cytosine, G: Guanine, T: Thymine).<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       1<br>
+       TTTCAGTCTTCGAAACGT<br>
+       5<br>
+       David=ATGGCCATCGGGGTCGGCCGTCGCTGGC<br>
+       Bobby=TTTCAGTCTTCGACGT<br>
+       Brian=TTGAATGGCGTCTGGCAAACTGGCTT<br>
+       Jose=TTGACCATGACGTGCCCACTGGC<br>
+       Kyle=TTGACCAGGGGAATAAACTTTCT<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program’s output should display the name of the person whose DNA was the closest match to the sample according to the length of the longest subsequence algorithm.  If the length of the longest subsequence is shared by two or more people, output the names in alphabetical order separated by commas.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Bobby<br>
+       <br>
+    </p></body>
+</html>

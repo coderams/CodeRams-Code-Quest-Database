@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 060: Word Worm</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 6<br>This problem has a difficulty of 55</em></p>      <p id="ptext">       Input File:  Prob06.in.txt<br>
+       Output: Your output needs to be directed to stdout (i.e., using System.out.println())<br>
+       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       The goal of a word search is simple: find words in a block of letters either up, down, left, right, or diagonally.  We have all played this game hundreds of times.  But this isn’t your run-of-the-mill word maze.  Today you will search for a word worm that bends its way in any direction through a block of letters.  The worm may even overlap itself.  Don’t let him get away!<br>
+       <br>
+       Here are the properties of word worms:<br>
+       •	Word worms can move left, right, up, down, and diagonally.<br>
+       •	Word worms can overlap other word worms (even itself).<br>
+       <br>
+       Here is an example of a word worm spelling the word LOCKHEED:<br>
+       <br>
+     </p><p id="code"><br>
+       A D E K H E Q<br>
+       B X E H K J R<br>
+       J I L O C K D<br>
+       R P I G N A H<br>
+       T E N E F H M<br>
+       J U O P L N T<br><br>
+     </p><p id="ptext">
+       <br>
+
+       As another example, the following could be used to spell the word BANANA:<br>
+       <br>
+       B A N<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob06.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain two space separated positive integers in the form R C, where R is the number of rows in the puzzle and C is the number of columns in the puzzle.<br>
+       •	The next R lines will each contain C space separated capital letters – this is the puzzle board.<br>
+       •	The next line of each test case will contain a positive integer N denoting the number of words that follow.<br>
+       •	The next N lines of each test case will contain a single word in all capital letters.  These are the words to search for in the puzzle.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       1<br>
+       6 7<br>
+       A D E K H E Q<br>
+       B X E H K J R<br>
+       J I L O C K D<br>
+       R P I G N A H<br>
+       T E N E F H M<br>
+       J U O P L N T<br>
+       4<br>
+       LOCKHEED<br>
+       PLANE<br>
+       JET<br>
+       ENGINE<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should print the list of words that were found in the grid, in the order they were listed in the input file.  If a word could not be found, do not print it out.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       LOCKHEED<br>
+       JET<br>
+       ENGINE<br>
+       <br>
+    </p></body>
+</html>

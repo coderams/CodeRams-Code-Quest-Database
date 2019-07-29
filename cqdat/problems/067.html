@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 067: Sky Scraper</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 13<br>This problem has a difficulty of 85</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Sky scrapers are the tallest man-made structures in the world; the tallest being Burj Khalifa in Dubai.  They are expertly designed to stretch high into the sky and resist wind and seismic activity.  Your task, should you choose to accept it, is to build the tallest sky scraper possible from a set of bricks.  But like any good construction project there are design requirements:<br>
+       •	You will be given a set of rectangular bricks of varying sizes.  You can use each brick only once.<br>
+       •	You must stack them on top of one another to build the tallest structure possible.<br>
+       •	You can only stack a brick on top of another brick if the dimensions of the lower brick’s top are greater than or equal to the base of the brick you are stacking on top.<br>
+       •	You can rotate the brick so that any of the sides can function as its base.<br>
+       •	Brick surfaces must stay parallel to the x, y, and z axes, so only 90 degree rotation is possible in any direction.<br>
+       <br>
+       <br>
+       This problem is an example of an NP-complete type problem.  What that means is that there is no slick algorithm that will cut your program’s running time down.  It also means that we promise to keep the judging input set small.  In our testing, even 50 blocks made us go over the 2 minute run time allotted for problem submissions.  The judging data will have a maximum of 25 blocks, and our solution will run for a maximum of 30 seconds.  The judging software will allow your program two minutes to run before timing out.  Good luck!<br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The first line of the file Prob13.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N denoting the number of blocks.<br>
+       •	The next N lines will contain the description of a single block in the form LxWxH, where L is the block’s length, W is the block’s width, and H is the block’s height.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       4<br>
+       1x2x3<br>
+       2x2x4<br>
+       5x4x1<br>
+       2x1x2<br>
+       5<br>
+       7x7x7<br>
+       6x6x6<br>
+       40x40x1<br>
+       5x5x5<br>
+       4x4x4<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should print out the height of the tallest tower you can make with the blocks you were given.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       12<br>
+       40<br>
+       <br>
+    </p></body>
+</html>

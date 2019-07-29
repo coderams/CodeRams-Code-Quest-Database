@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 062: Carrier Landing</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 8<br>This problem has a difficulty of 50</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       You are in charge of directing a state-of-the-art, fifth-generation fighter jet to a safe landing aboard the USS Quest Aircraft Carrier.  If the aircraft glide-slope is too steep or too shallow, you must indicate to the pilot that he or she must abort the landing and retry.  Only when the glide slopes to the targeted landing zone are within tolerances are you to indicate to the pilot that he or she may commit to the landing.<br>
+       <br>
+       You must calculate the glide slopes and determine if they are within tolerance for a safe landing.  If the slope of approach is between -.8 and -1.6 (inclusive), the aircraft is clear to land – otherwise it is waved off.  Because you are landing on a carrier, you must consider both the slope between the plane and the front of the landing zone as well as the slope between the plane and the end of the landing zone.  Both slopes must be within tolerance for a safe landing.<br>
+       <br>
+       <br>
+       <br>
+       <img src="../pics/062_A.png">
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob08.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N denoting the number of aircraft sections that follow.  Each aircraft section will have the following four input lines:<br>
+       o	The name of the aircraft<br>
+       o	The X and Y coordinates of the aircraft separated by a comma<br>
+       o	The X and Y coordinates of the start of the landing zone separated by a comma<br>
+       o	The X and Y coordinates of the end of the landing zone separated by a comma<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       1<br>
+       ExamplePlane<br>
+       35,150<br>
+       150,20<br>
+       190,20<br>
+       2<br>
+       Freebird<br>
+       25,220<br>
+       150,20<br>
+       190,20<br>
+       Lightning<br>
+       75,140<br>
+       110,20<br>
+       150,20<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should give instructions to the aircraft in the order they were encountered in the input file.  For a given aircraft, there are two possible outputs:<br>
+       <br>
+       [Aircraft Name], Clear To Land!<br>
+                               Or<br>
+       [Aircraft Name], Abort Landing!<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       ExamplePlane, Clear To Land!<br>
+       <br>
+    </p></body>
+</html>

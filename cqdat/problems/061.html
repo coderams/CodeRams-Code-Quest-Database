@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 061: Aerospace Intruders</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2017 Problem 7<br>This problem has a difficulty of 50</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       You are patrolling national air-space in an F-22 Raptor and your radar indicates incoming alien robot invaders.  Your directive is to destroy each ship starting with the closest and ending with the furthest.  Each time you destroy one ship, all remaining ships advance closer to you, but at differing rates.  Class-A ships advance 10 X-units, Class-B ships advance 20 X-units, and Class-C ships advance 30 X-units.<br>
+       <br>
+       For the purposes of this problem you are trying to protect the Y axis, so the closest ship is the one with the lowest X coordinate.  In the event of a tie, you should destroy the ship with the largest Y coordinate first.  Negative X coordinates are fine – it just means the aliens have invaded your airspace!<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The first line of the file Prob07.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:<br>
+       <br>
+       •	The first line of each test case will contain a positive integer N denoting the number of alien ships that follow.<br>
+       •	The next N lines will contain a description of an alien ship in the following format:<br>
+       <br>
+       [ShipName]_[Class]:[X],[Y][br]
+       <br>
+       The ship name and the class of the ship will be separated by an underscore.  The class and the X coordinate will be separated by a colon.  The X and Y coordinates will be separated by a comma.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2<br>
+       3<br>
+       DOOM_A:123,1444<br>
+       TEST_B:12,145<br>
+       BOGEE_C:52,345<br>
+       13<br>
+       SHIP1_A:150,150<br>
+       SHIP2_B:200,150<br>
+       SHIP3_C:165,130<br>
+       SHIP4_A:205,135<br>
+       SHIP5_B:155,105<br>
+       SHIP6_C:195,120<br>
+       SHIP7_A:140,50<br>
+       SHIP8_B:175,70<br>
+       SHIP9_C:215,70<br>
+       SHIP10_A:145,10<br>
+       SHIP11_B:160,30<br>
+       SHIP12_C:185,35<br>
+       SHIP13_C:225,20<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should output the data about the ships that it destroys in the order in which it destroys them.  The format for each output line should be:<br>
+       <br>
+       Destroyed Ship: [SHIPNAME] xLoc: [x][br]
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Destroyed Ship: TEST xLoc: 12<br>
+       Destroyed Ship: BOGEE xLoc: 22<br>
+       Destroyed Ship: DOOM xLoc: 103<br>
+       Destroyed Ship: SHIP7 xLoc: 140<br>
+       Destroyed Ship: SHIP3 xLoc: 135<br>
+       Destroyed Ship: SHIP5 xLoc: 115<br>
+       Destroyed Ship: SHIP12 xLoc: 95<br>
+       Destroyed Ship: SHIP6 xLoc: 75<br>
+       Destroyed Ship: SHIP11 xLoc: 60<br>
+       Destroyed Ship: SHIP9 xLoc: 35<br>
+       Destroyed Ship: SHIP13 xLoc: 15<br>
+       Destroyed Ship: SHIP8 xLoc: 15<br>
+       Destroyed Ship: SHIP2 xLoc: 20<br>
+       Destroyed Ship: SHIP10 xLoc: 45<br>
+       Destroyed Ship: SHIP1 xLoc: 40<br>
+       Destroyed Ship: SHIP4 xLoc: 85<br>
+       <br>
+    </p></body>
+</html>
