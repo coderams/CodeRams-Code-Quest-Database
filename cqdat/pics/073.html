@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 073: Pig Latin</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 4<br>This problem has a difficulty of 35</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Pig Latin is a mysterious and often overlooked way of communicating.  We want to make sure that the art of speaking Pig Latin is not lost.  To help with this worthwhile task you will need to write an English to Pig Latin translator.<br>
+       <br>
+       For words that begin with a single consonant: take the consonant off the front of the word and add it to the end of the word. Then add “ay” to the very end.  Here are some examples:<br>
+       </p><pre id="ptext">
+       <br>
+       cat = atcay          dog = ogday          simply = implysay          noise = oisenay<br>
+       <br>
+       </pre><p id="ptext">
+       For words that began with multiple consonants: take the group of consonants off the front of the word and add them to the end of the word.  Then add “ay” to the very end.  Here are some examples:<br>
+       <br>
+       </p><pre id="ptext">
+       scratch = atchscray          thick = ickthay          flight = ightflay          grime = imegray<br>
+       <br>
+       </pre><p id="ptext">
+       For words that begin with a vowel, just add “yay” at the end.  For example:<br>
+       <br>
+       </p><pre id="ptext">
+       is = isyay          apple = appleyay          under = underyay          octopus = octopusyay<br>
+       <br>
+     </pre><p id="ptext">
+       For the sake of simplicity, we will consider the letter y to always be a consonant.  The only exception to these rules is the letter q.  Since the letter q needs the letter u, if you find a “qu” sequence in a word, treat that sequence as a single consonant character.  You will see an example of that in the example output below.<br>
+       <br>
+       For words that do not contain a vowel, simply keep the word the same.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob04.in.txt will contain phrases to be translated, one per line, all in lower case.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       pig latin rocks<br>
+       code quest is the best<br>
+       java rules<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       You should output the phrases translated to Pig Latin in the order they were in the input file.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       igpay atinlay ocksray<br>
+       odecay estquay isyay ethay estbay<br>
+       avajay ulesray<br>
+       <br>
+    </p></body>
+</html>

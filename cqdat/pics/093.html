@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 093: n choose k</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 8<br>This problem has a difficulty of 25</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       In mathematics, a combination refers to a way of selecting some members of a group of things without regard to order.  For example, if there were four pieces of fruit on a table: an Apple, an Orange, a Pear, and a Banana, there would be 6 ways to choose 2 fruits: Apple-Orange, Apple-Pear, Apple-Banana, Orange-Pear, Orange-Banana, and Pear-Banana.<br>
+       <br>
+       In a similar fashion, a fighter pilot can only choose to engage a certain number of enemy targets based on how many weapons their plane has.  Your job is to write a program that will compute the number of possible combinations of targets that can be engaged given the total number of enemy combatants and the number of missiles on a plane.  The mathematical formula for computing a combination is given by: <br>
+       <br>
+       <br>
+       <img src="../pics/093_A.png">
+       <br>
+       Where n is the number of things to choose from (in this case, the number of targets), and k is the number of things to choose (in this case, the number of missiles).  The exclamation point denotes a factorial.  In case you are unfamiliar with them, a factorial is the product of a positive integer multiplied by all lesser positive integers.  For example: <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob08.in.txt will contain two numbers per line separated by a space.  The first number is the number of enemy combatants, and the second number is the number of missiles available.  Both numbers will always be integers greater than zero, and the number of combatants will always be greater than the number of missiles.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       2 1<br>
+       50 10<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should output the number of possible combinations of targets to engage, one per line.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       2<br>
+       10272278170<br>
+       <br>
+    </p></body>
+</html>

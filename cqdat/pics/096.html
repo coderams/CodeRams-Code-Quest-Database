@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 096: Camel Case</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 11<br>This problem has a difficulty of 45</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Camel Case is a naming style common in many programming languages.  In Java, method and variable names typically start with a lowercase letter, with all subsequent words starting with a capital letter (example: startThread).  Names of classes follow the same pattern, except that they start with a capital letter (example: BlueCar).<br>
+       <br>
+       Your task is to write a program that creates or splits Camel Case variable, method, and class names.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob11.in.txt will contain a list of operations, object types, and words that you will need to operate on.  The pattern will be: Operation;ObjectType;Words.  Here is an explanation of the different elements of the input file:<br>
+       •	The operation will be either S (for split) or C (for combine).<br>
+       •	The Object Type will be M (for method), C (for class), or V (for variable)<br>
+       •	In the case of a split operation, the words will be a camel case method, class, or variable name that you need to split into a space-delimited list of words starting with lowercase letters.<br>
+       •	In the case of a combine operation, the words will be a space-delimited list of words starting with lowercase letters that you need to combine into the appropriate camel case string.  Methods should end with an empty set of parentheses to differentiate them from variable names.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       S;M;plasticCup()<br>
+       C;V;mobile phone<br>
+       C;C;coffee machine<br>
+       S;C;LargeSoftwareBook<br>
+       C;M;white sheet of paper<br>
+       S;V;pictureFrame<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program’s output should display either the space-delimited list of words (in the case of a split operation) or the appropriate camel case string (in the case of a combine operation).<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       plastic cup<br>
+       mobilePhone<br>
+       CoffeeMachine<br>
+       large software book<br>
+       whiteSheetOfPaper()<br>
+       picture frame<br>
+       <br>
+    </p></body>
+</html>

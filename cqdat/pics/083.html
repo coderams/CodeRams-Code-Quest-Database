@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 083: 3D Bingo</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 14<br>This problem has a difficulty of 70</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       If you were here last year then you may remember Mabel, our resident bingo lover.  Since you coded a solution to check her bingo cards, she has grown bored of the traditional bingo game.  In order to challenge herself again, she started a 3D Bingo parlor to kick it up a notch.  Your task is to help her check for bingos.  The following information will help you.<br>
+       <br>
+       </p><h1 id="spec">Traditional bingo:</h1><p id="ptext"><br>
+       <br>
+       A bingo card utilizes the numbers 1 through 75.  The five columns of the card are labeled 'B', 'I', 'N', 'G', and 'O' from left to right.  The center space is usually marked "Free" or "Free Space", and is considered automatically filled.  The range of printed numbers that can appear on the card is normally restricted by column, with the 'B' column only containing numbers between 1 and 15 inclusive, the 'I' column containing only 16 through 30, 'N' containing 31 through 45, 'G' containing 46 through 60, and 'O' containing 61 through 75.  The object of the game is to fill 5 consecutive spaces (a whole row, a whole column, or one of the two diagonals) – which is called a bingo.  The game ends when a bingo is found on one or more cards.<br>
+       <br>
+       </p><h1 id="spec">3D bingo:</h1><p id="ptext"><br>
+       <br>
+       3D bingo is very similar to traditional bingo, except that sets of 5 cards can be used to form a “bingo cube”, allowing for a bingo in more ways (straight up and diagonally up).  Obviously the free space would cause an automatic bingo, so it has been eliminated in the 3D version.<br>
+       <br>
+       Mabel really wanted a challenge keeping up with her cards, so she decided that cards could be used in any combination to form a cube.  This means that if you buy 4 cards, you have to rely on a single card for a bingo.  However, if you buy 5 cards, then you can make a bingo cube.  Since the order of the cards does not need to be set before the game starts, there are 120 ways to make the bingo cube out of 5 cards.  Buying a sixth card means that you can make 720 different bingo cubes out of your cards.  You can see how this game would be much more challenging to keep track of.<br>
+       <br>
+       Your task is to write a program that will tell Mabel how many possible bingo combinations there are during a 3D bingo game.<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob14.in.txt will contain two sections:<br>
+       1.	The first section will contain the bingo card information.  There will be 5 input lines per card.  Each line will contain the numbers for one row of a bingo card separated by spaces.  The first 5 rows will make up card number 1, the second 5 rows will make up card number 2, and so on.  The number of rows will be a multiple of 5 (meaning there are no extra rows to throw away).<br>
+       2.	The second section will be the numbers called during the game.  The word PLAY will appear on a line by itself to separate the card information from the game simulation.  Following the word PLAY each line will contain a value to be played on your bingo cards (i.e. B3, I27, or B5).  Once a bingo is found, the game stops.  Any extra input after a bingo is found should be ignored.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       10 23 36 49 67<br>
+       13 26 34 50 70<br>
+       14 20 42 59 71<br>
+       6 25 35 47 72<br>
+       7 27 31 57 61<br>
+       9 24 36 48 65<br>
+       11 16 41 47 71<br>
+       1 19 43 56 64<br>
+       2 17 44 53 62<br>
+       3 18 42 51 66<br>
+       12 20 39 59 69<br>
+       4 22 41 55 61<br>
+       6 29 33 53 72<br>
+       14 17 37 58 65<br>
+       11 16 44 47 66<br>
+       7 26 31 57 73<br>
+       1 21 40 55 61<br>
+       8 29 43 47 62<br>
+       11 27 35 46 66<br>
+       6 16 36 52 67<br>
+       5 16 33 47 62<br>
+       7 27 35 52 66<br>
+       11 22 44 51 70<br>
+       12 19 36 49 72<br>
+       13 21 41 59 73<br>
+       PLAY<br>
+       I28<br>
+       G46<br>
+       I16<br>
+       N43<br>
+       B3<br>
+       O67<br>
+       O62<br>
+       O64<br>
+       G49<br>
+       G54<br>
+       B7<br>
+       N44<br>
+       O63<br>
+       B5<br>
+       G57<br>
+       B6<br>
+       I27<br>
+       N38<br>
+       G55<br>
+       B8<br>
+       B11<br>
+       O73<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should print the total number of bingos found using the format shown below.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Number of bingos: 2<br>
+       <br>
+    </p></body>
+</html>

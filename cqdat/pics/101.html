@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 101: Bingo!</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 16<br>This problem has a difficulty of 70</em></p>      <p id="ptext">       Input File:  Prob16.in.txt<br>
+       Output: Your output needs to be directed to stdout (i.e., using System.out.println())<br>
+       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Mabel loves to play bingo.  She needs your help to be able to play multiple cards at the same time.  She will provide you with the numbers for each card and the numbers called for a bingo game.  You will need to tell Mabel which of her bingo cards are winners.  There is no limit to the number of cards Mabel can play and no limit to the number of winning cards.<br>
+       <br>
+       A Bingo card utilizes the numbers 1 through 75.  The five columns of the card are labeled 'B', 'I', 'N', 'G', and 'O' from left to right.  The center space is usually marked "Free" or "Free Space", and is considered automatically filled.  The range of printed numbers that can appear on the card is normally restricted by column, with the 'B' column only containing numbers between 1 and 15 inclusive, the 'I' column containing only 16 through 30, 'N' containing 31 through 45, 'G' containing 46 through 60, and 'O' containing 61 through 75.  The object of the game is to fill 5 consecutive spaces (a whole row, a whole column, or one of the two diagonals).  The game ends when a bingo is found on one or more cards.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob16.in.txt will contain two sections:<br>
+       1.	The first section will contain the bingo card information.  There will be 5 input lines per card.  Each line will contain the numbers for one row of a bingo card separated by spaces.  Since the free space is in the very middle of the card, the third row of input will have only 4 numbers.  The first 5 rows will make up card number 1, the second 5 rows will make up card number 2, and so on.<br>
+       2.	The second section will be the numbers called during the game.  The word PLAY will appear on a line by itself to separate the card information from the game simulation.  Following the word PLAY each line will contain a value to be played on your bingo cards (i.e. B3, I27, or B5).  Remember, the FREE space is always considered to be automatically played.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       12 27 32 53 75<br>
+       11 22 34 60 68<br>
+       3 28 56 62<br>
+       4 20 39 52 65<br>
+       13 23 31 49 66<br>
+       4 26 35 47 71<br>
+       14 20 40 48 72<br>
+       1 21 53 65<br>
+       5 18 44 57 69<br>
+       6 19 32 52 66<br>
+       4 28 35 56 70<br>
+       3 20 43 54 65<br>
+       2 30 48 71<br>
+       8 21 36 46 74<br>
+       5 24 37 50 64<br>
+       13 29 43 53 65<br>
+       7 30 33 55 64<br>
+       14 22 46 68<br>
+       2 27 44 50 71<br>
+       4 26 36 59 66<br>
+       PLAY<br>
+       B4<br>
+       N40<br>
+       O73<br>
+       G50<br>
+       B14<br>
+       I26<br>
+       I20<br>
+       B9<br>
+       O64<br>
+       G59<br>
+       G48<br>
+       N32<br>
+       G46<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program’s output should display the number of each winning card separated by spaces on a single line.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       <br>
+    </p></body>
+</html>

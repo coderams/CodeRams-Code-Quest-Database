@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 090: Software Removal</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 5<br>This problem has a difficulty of 20</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Susan works for Widgets and Such in the IT Department.  Part of Susan’s job is to remove old software from computers.  Susan needs to run a program that can determine from program access logs which pieces of software have not been accessed within the last 180 days.  If the software was accessed then it should remain on the system; otherwise that software is eligible to be removed.  If a piece of software was accessed exactly 180 days ago, it should remain on the system.<br>
+       <br>
+       Your task is to write a program that reads software names and access dates and decides which pieces of software to remove from a system based on the rules above.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob05.in.txt will contain a reference date that the log files were collected on the first line, followed by a list of software names and access dates separated by a colon.  There will be one name-date pair per line.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       3/21/2013<br>
+       WordZ:10/18/2012<br>
+       CalculateThat:1/19/2010<br>
+       DrawItWithThis:12/19/2012<br>
+       Software 42:7/23/2012<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program’s output should display the software which is eligible to be removed and how many days it’s been since the software was accessed separated by a comma and a space.  You should print one software-days pair per line, and your output should be in the same order as the input file.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       CalculateThat, 1156<br>
+       Software 42, 241<br>
+       <br>
+    </p></body>
+</html>

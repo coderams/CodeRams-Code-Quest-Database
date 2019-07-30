@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 095: IP Addresses</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 10<br>This problem has a difficulty of 40</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       An Internet Protocol address (IP address) is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication.<br>
+       <br>
+       IP addresses consist of 4 decimal numbers ranging from 0 to 255 separated by periods (this is called dotted decimal notation).  Each number is often referred to as an octet because numbers from 0 to 255 can be represented by 8 binary digits (see the binary number system appendix if you need more information on binary numbers).<br>
+       <br>
+       IP addresses are broken down into 5 classes using the following rules:<br>
+       <br>
+       •	Class A network addresses range from 0.0.0.0 to 127. 255. 255. 255<br>
+       •	Class B network addresses range from 128.0.0.0 to 191. 255. 255. 255<br>
+       •	Class C network addresses range from 192.0.0.0 to 223. 255. 255. 255<br>
+       •	Class D network addresses range from 224.0.0.0 to 239. 255. 255. 255<br>
+       •	Class E network addresses range from 240.0.0.0 to 255. 255. 255. 255<br>
+       <br>
+       Your task is to create a program that will classify IP addresses and convert them from 32 bit binary notation to dotted decimal notation.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       The file Prob10.in.txt will contain a series of 32 bit binary numbers, one per line.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       01111111000000000000000000000001<br>
+       11011010110111101010101101010101<br>
+       10011010110111101010101101010101<br>
+       10111010110111101010101101010101<br>
+       11100000111111111111111111111111<br>
+       11111111111111111111111111111111<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program must print the IP address in dotted decimal notation followed by a space and the classification of the IP address in the form [CLASS X].<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       127.0.0.1 [CLASS A]<br>
+       218.222.171.85 [CLASS C]<br>
+       154.222.171.85 [CLASS B]<br>
+       186.222.171.85 [CLASS B]<br>
+       224.255.255.255 [CLASS D]<br>
+       255.255.255.255 [CLASS E]<br>
+       <br>
+    </p></body>
+</html>

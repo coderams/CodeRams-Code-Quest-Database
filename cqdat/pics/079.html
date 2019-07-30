@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 079: All Aboard!</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 10<br>This problem has a difficulty of 50</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Since their invention over 200 years ago, trains have provided a safe and efficient method of transportation.  Passenger trains carry hundreds of travelers from station to station, requiring only track to be laid between them.  In the beginning, train stations had dedicated tracks which linked them.  This proved to be a waste of infrastructure as much track was going unused the majority of the time.  Railroad switches were designed to solve this problem.  Switches allow trains to quickly cross to an adjacent track.  In this manner, trains were no longer bound to the track they began their journey on.   Your task will be to determine, for each starting station, what the end station is given a layout of interconnected tracks.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob10.in.txt will contain a set of train station names, tracks, barriers, and switches.<br>
+       •	Train tracks are denoted by an equal sign (=).  Each track has a start station and an end station.  Trains move from left to right.<br>
+       •	Station names will always be three characters and will appear at the beginning and end of a track.  Station names are not necessarily unique.<br>
+       •	Between two adjacent tracks will be barriers and switches.  Barriers are denoted by a minus sign (-), and switches are denoted by a vertical bar (|).  When a train reaches a switch, it will always crossover to the neighboring track.  For example:<br>
+       <br>
+     </p><pre id="ptext">
+       AAA======================BBB<br>
+          ------|---------|---<br>
+       AAB====================CCC<br>
+          --------|---------|----------<br>
+       AAC=============================DDD<br>
+       <br>
+     </pre><p id="ptext">
+       A train leaving station AAA would cross to the middle track, then to the bottom track, and then back to the middle track to arrive at station CCC.<br>
+
+       <br>
+       •	Switches will never connect directly to a station – they can only connect two track pieces.<br>
+       •	If the situation occurs where it’s possible for a train to switch to either of the two neighboring tracks, the train will always move in the “upward” direction.  Also, switches can be used to cross multiple tracks if they line up correctly.  For example:<br>
+       <br>
+       </p><pre id="ptext">
+       AAA=======BBB                    AAA=======BBB<br>
+          ---|---                          ---|---   <br>
+       AAB=======BBA                    AAB=======BBA<br>
+          ---|---                          ---|---   <br>
+       AAC=======BBC                    AAC=======BBC<br>
+       <br>
+     </pre><p id="ptext">
+       In the example on the left, a train leaving station AAB would arrive at the switches in the middle and would choose to move up instead of down.  The train would end up at station BBB.  In the example on the right, a train leaving station AAA would cross over the middle track because the switches are aligned.  The train would arrive at station BBC.<br>
+       <br>
+     </p><h1 id="spec">Example Input:</h1><pre id="code"><br>
+AAA========================================================GGG<br>
+  -|-----|------|--------|-----------|--------------------<br>
+BBB=======================================HHH<br>
+  --------|----------------|-----------|----------<br>
+CCC================================================III<br>
+  -----|--------------|--------------------|-----------------<br>
+DDD===========================================================JJJ<br>
+  -------|-------------|-------------------------------------<br>
+EEE============================KKK<br>
+  ------|----------------|---------------<br>
+FFF=======================================LLL<br>
+       <br>
+     </pre><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program should list out the starting stations in the order they were encountered in the input file.  For each starting station, list the ending station for a train leaving from that starting station in the following form:<br>
+       <br>
+       Start: StartStation, End: EndStation<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Start: AAA, End: JJJ<br>
+       Start: BBB, End: LLL<br>
+       Start: CCC, End: III<br>
+       Start: DDD, End: HHH<br>
+       <br>
+    </p></body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 071: Deal the Cards</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 2<br>This problem has a difficulty of 20</em></p>      <p id="ptext">       Input File:  Prob02.in.txt<br>
+       Output: Your output needs to be directed to stdout (i.e., using System.out.println())<br>
+       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       A deck of cards contains 52 cards.  Some are red, some are black, and there are 4 different suits.  You will be dealt hands of cards from a standard deck.  Group each hand by color, then by suit, and then by face value.  Your output should list the amount of cards in each grouping.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob02.in.txt will contain the following:<br>
+       •	A hand of cards will appear on one line.  Cards will be separated by spaces.<br>
+       •	Each hand will be on a separate line.<br>
+       •	Each hand will have a random number of cards.<br>
+       •	The cards will be listed by face value then suit (i.e. 5C would be the 5 of Clubs).<br>
+       •	There are 4 suits in a deck of playing cards: Clubs, Diamonds, Hearts, and Spades.<br>
+       •	Spades and Clubs are always BLACK.  Hearts and Diamonds are always RED.<br>
+       •	The letters J, Q, K, and A will represent Jack, Queen, King, and Ace respectively.<br>
+       •	No Jokers will be dealt.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       9H JS AC 3H 10S 9C 5H 7C 4S QS 2D 2S 8H 9D 3D 7H 7S AS 10H<br>
+       AS JC 7H 8D KH JC 5C 9H 10D 2S 7S 6H<br>
+       JH KD 10D 10H 2H AH 8D 7H 5H 4D 9H 3D KH<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your output should contain the groupings of cards in each hand.  The total number of cards for each group should be printed followed by a dash (-) and then the name of the group.   If a color or a suit is not in the hand, a value of 0 should be printed for the group.  Face values that are not present should be omitted from the output.  For the color lines, always use the words “RED” and “BLACK” (i.e. don’t put a trailing S on either category).  For the suit and face value lines, use plurals as appropriate.<br>
+       <br>
+       Separate each hand by a title of “HAND #” in the order that it was given in the input file.  Print the groups in the following order for each hand:  <br>
+       •	COLOR (in this order: RED, BLACK)<br>
+       •	SUIT (in suit order: CLUB, DIAMOND, HEART, SPADE)<br>
+       •	FACE VALUE (face value should be printed in ascending order – 2 is low, Ace is high.<br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       HAND 1<br>
+       9-RED<br>
+       10-BLACK<br>
+       3-CLUBS<br>
+       3-DIAMONDS<br>
+       6-HEARTS<br>
+       7-SPADES<br>
+       2-2 cards<br>
+       2-3 cards<br>
+       1-4 card<br>
+       1-5 card<br>
+       3-7 cards<br>
+       1-8 card<br>
+       3-9 cards<br>
+       2-10 cards<br>
+       1-Jack<br>
+       1-Queen<br>
+       2-Aces<br>
+       HAND 2<br>
+       6-RED<br>
+       6-BLACK<br>
+       3-CLUBS<br>
+       2-DIAMONDS<br>
+       4-HEARTS<br>
+       3-SPADES<br>
+       1-2 card<br>
+       1-5 card<br>
+       1-6 card<br>
+       2-7 cards<br>
+       1-8 card<br>
+       1-9 card<br>
+       1-10 card<br>
+       2-Jacks<br>
+       1-King<br>
+       1-Ace<br>
+       HAND 3<br>
+       13-RED<br>
+       0-BLACK<br>
+       0-CLUBS<br>
+       5-DIAMONDS<br>
+       8-HEARTS<br>
+       0-SPADES<br>
+       1-2 card<br>
+       1-3 card<br>
+       1-4 card<br>
+       1-5 card<br>
+       1-7 card<br>
+       1-8 card<br>
+       1-9 card<br>
+       2-10 cards<br>
+       1-Jack<br>
+       2-Kings<br>
+       1-Ace<br>
+       <br>
+    </p></body>
+</html>

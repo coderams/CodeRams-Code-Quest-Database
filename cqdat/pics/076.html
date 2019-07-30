@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 076: Morse Code</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2014 Problem 7<br>This problem has a difficulty of 45</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Everything in a computer boils down to ones and zeroes – things we call bits.  More accurately, we think of a bit represented by a 1 to be considered “on”, and that is measured by the presence of an electric charge.  We think of a bit represented by a 0 to be considered “off”, and that is measured by the lack of an electric charge.  Today we have computers that have billions of bits that we can put together to form useful information – information that can be readily consumed by untrained users (like text on a screen).  But what if there were only a single bit?<br>
+       <br>
+       Back in 1836, Samuel Morse needed a way to transmit messages using only electric current.  The problem: how to represent text using only an “on” or an “off” signal at a single node.  The answer: the length of time that the bit was on or off would have to mean something.  The product: Morse code!  Here is how Morse code works:<br>
+       <br>
+       •	The building blocks of Morse code are the “dot” and the “dash”.  A dot is an electric signal with a length of one time unit.  A dash is an electric signal with the length of three time units.<br>
+       •	The space between dots and dashes within a single letter has a length of one time unit.<br>
+       •	The space between letters in the same word has a length of three time units.<br>
+       •	The space between two words has a length of seven time units.<br>
+       <br>
+       Your task has two parts: first, read in some text and turn it into Morse code.  Second, read in some Morse code and decode it into text.  The last page of this problem has a translation table for you to use when coding your solution.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob07.in.txt will contain the following:<br>
+       •	Some number of lines of text that you are to read in and change to Morse code.  Line breaks should be preserved, so your output should have the same number of lines that the input text has.  There will be only text – no numbers, and no special characters or punctuation.<br>
+       •	A line reading END OF TRANSMISSION which will serve as the break point between the text and the Morse code that you are to interpret.<br>
+       •	Some number of lines of Morse code that you are to read in and change to plain text.  Again, line breaks should be preserved.<br>
+       •	A line reading END OF TRANSMISSION which will denote the end of the file<br>
+       <br>
+       <br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       It is I<br>
+       Code Quest<br>
+       END OF TRANSMISSION<br>
+       ===_=_===_=___===_===_===___===_=_=___=_______===_===_=_===___=_=_===___=___=_=_=___===_______=_===_=___=_=_===___=_===_=_=___=___=_=_=<br>
+       =_=_______=_=_=_=___===_===_===___=_===_===_=___=_______===_=_===_===___===_===_===___=_=_===_______===_===_=___=_=_===___===_=_===_===___=_=_=_______=_===_=_=___=_=___===_=_===___=_______=_===_===_=___=_=___===_===_=_=___===_===_=_=___=_===<br>
+       END OF TRANSMISSION<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Because Morse code deals only with the presence or absence of an electrical current, you will use the following when translating between text and Morse code:<br>
+       •	The presence of an electrical current will be represented by an equal sign (=).<br>
+       •	The absence of an electrical current will be represented by an underscore (_).<br>
+       <br>
+       Your output should mimic the input file by having the following four elements:<br>
+       •	The Morse Code representation of the text from the input file<br>
+       •	A line containing the phrase END OF TRANSMISSION<br>
+       •	The text representation of the Morse Code from the input file (all in lowercase)<br>
+       •	A line containing the phrase END OF TRANSMISSION<br>
+       <br>
+       The Morse Code sections are too long to fit on one printed line, so they are wrapping here in the printed packet.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       =_=___===_______=_=___=_=_=_______=_=<br>
+       ===_=_===_=___===_===_===___===_=_=___=_______===_===_=_===___=_=_===___=___=_=_=___===<br>
+       END OF TRANSMISSION<br>
+       code quest rules<br>
+       i hope you guys like pizza<br>
+       END OF TRANSMISSION<br>
+       <br>
+    </p></body>
+</html>

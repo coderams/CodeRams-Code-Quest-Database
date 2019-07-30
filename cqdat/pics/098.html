@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code Quest Database</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>    <h1 id="statement">Problem 098: Encode / Decode</h1>
+      <p id="sub">    <em>Problem made by Lockheed Martin, is CodeQuest 2013 Problem 13<br>This problem has a difficulty of 50</em></p>      <p id="ptext">       <br>
+      </p><h1 id="spec">Introduction</h1><p id="ptext">
+       <br>
+       Two friends have been using instant messenger and have also been watching too many spy movies.  They are afraid that people will be able to listen in on their conversation, so they use steganography to hide what they are talking about.  The friends send each other YouTube links that follow this pattern:<br>
+       <br>
+       https://www.youtube.com/watch?v=UYU8Q3<br>
+       <br>
+       This looks like any normal YouTube link to the untrained eye, but the text after the “v=” is actually an encoded message.  Your job is to write a program that will decode a conversation encoded using these YouTube links.  The encoding is done using the following table:<br>
+       <br>
+       <img src="../pics/098_A.png">
+       <br>
+       Every character in normal text is split into two encoded characters as follows:<br>
+       1.	Find the ASCII value of the character (for example, the letter h has an ASCII value of 104, or 01101000).<br>
+       2.	Use the integer value of the first 4 bits to get the first encoded character (for h, the first 4 bits are 0110, or 6, which maps to U from the table).<br>
+       3.	Do the same for the second 4 bits (for h, the second 4 bits are 1000, or 8, which maps to Y from the table).<br>
+       4.	Put these encoded characters together and repeat the process for each character in the string you are encoding (so h would map to UY).<br>
+       <br>
+       Your program should reverse this process to find the actual text from the encoded link parameters.<br>
+       <br>
+      </p><h1 id="spec">Program Input</h1><p id="ptext">
+       <br>
+       The file Prob13.in.txt will contain a conversation between two or more people using the fake links containing the encodings.  Their conversation will only use alphanumeric characters, and special characters such as ‘=’ will not be used in the conversation.<br>
+       <br>
+      </p><h1 id="spec">Example Input:</h1><p id="code"><br>
+       Alice: https://www.youtube.com/watch?v=UYU8Q3<br>
+       Bob: https://www.youtube.com/watch?v=QQUYUBQ5XAU3Q1XAU3Q5<br>
+       Alice: https://www.youtube.com/watch?v=U1UBUEXAQQU8XAU4U8U8Q5<br>
+       Bob: https://www.youtube.com/watch?v=5E57<br>
+       Bob: https://www.youtube.com/watch?v=53XAU5U7UEQ5XAUGUEU7QQXAQ3U7Q8<br>
+       <br>
+      </p><h1 id="spec">Program Output</h1><p id="ptext">
+       <br>
+       Your program’s output should display the conversation in the same format as the input but with the decoded values instead of the links.<br>
+       <br>
+      </p><h1 id="spec">Example Output:</h1><p id="code"><br>
+       Alice: hey<br>
+       Bob: what is it<br>
+       Alice: can we meet<br>
+       Bob: NO<br>
+       Bob: I dont know you<br>
+       <br>
+    </p></body>
+</html>
